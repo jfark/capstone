@@ -256,12 +256,6 @@ label {
   will-change: transform;
 }
 
-/*.viewport .scene3D-container .scene3D > div {
-  position: absolute;
-  display: block;
-  width: 100%;
-  top: 40%;
-}*/
 
 .viewport .scene3D-container .scene3D > div {
   position: absolute;
@@ -276,51 +270,28 @@ label {
   }
 }
 
-/*.viewport .scene3D-container .scene3D > div:nth-child(2n) {
-  left: 0;
-}*/
-
-.viewport .scene3D-container .scene3D > .second-scene-1  {
+.viewport .scene3D-container .scene3D > div:nth-child(2n) {
   left: 0;
 }
 
-.viewport .scene3D-container .scene3D > .second-scene-2 {
+.viewport .scene3D-container .scene3D > div:nth-child(2n + 1) {
   right: 0;
 }
 
-/*.viewport .scene3D-container .scene3D > div:nth-child(2n + 1) {
-  right: 0;
-  }*/
-
-.viewport .scene3D-container .scene3D > .second-scene-1 {
+.viewport .scene3D-container .scene3D > div:nth-child(0) {
   -webkit-transform: translate3D(22%, 30%, calc(var(--itemZ) * var(--cameraSpeed) * 0 * -1px));
           transform: translate3D(22%, 30%, calc(var(--itemZ) * var(--cameraSpeed) * 0 * -1px));
 }
 
-/*.viewport .scene3D-container .scene3D > div:nth-child(0) {
-  -webkit-transform: translate3D(22%, 30%, calc(var(--itemZ) * var(--cameraSpeed) * 0 * -1px));
-          transform: translate3D(22%, 30%, calc(var(--itemZ) * var(--cameraSpeed) * 0 * -1px));
-}*/
-
-.viewport .scene3D-container .scene3D > .second-scene-1 {
+.viewport .scene3D-container .scene3D > div:nth-child(1) {
   -webkit-transform: translate3D(10%, -3%, calc(var(--itemZ) * var(--cameraSpeed) * 1 * -1px));
           transform: translate3D(10%, -3%, calc(var(--itemZ) * var(--cameraSpeed) * 1 * -1px));
 }
 
-/*.viewport .scene3D-container .scene3D > div:nth-child(1) {
-  -webkit-transform: translate3D(10%, -3%, calc(var(--itemZ) * var(--cameraSpeed) * 1 * -1px));
-          transform: translate3D(10%, -3%, calc(var(--itemZ) * var(--cameraSpeed) * 1 * -1px));
-}*/
-
-.viewport .scene3D-container .scene3D > .second-scene-2 {
+.viewport .scene3D-container .scene3D > div:nth-child(2) {
   -webkit-transform: translate3D(-15%, -5%, calc(var(--itemZ) * var(--cameraSpeed) * 2 * -1px));
           transform: translate3D(-15%, -5%, calc(var(--itemZ) * var(--cameraSpeed) * 2 * -1px));
 }
-
-/*.viewport .scene3D-container .scene3D > div:nth-child(2) {
-  -webkit-transform: translate3D(-15%, -5%, calc(var(--itemZ) * var(--cameraSpeed) * 2 * -1px));
-          transform: translate3D(-15%, -5%, calc(var(--itemZ) * var(--cameraSpeed) * 2 * -1px));
-}*/
 
 .viewport .scene3D-container .scene3D > div:nth-child(3) {
   -webkit-transform: translate3D(5%, -44%, calc(var(--itemZ) * var(--cameraSpeed) * 3 * -1px));
@@ -492,7 +463,7 @@ h1 .logo {
 }
 
 .scene3D > div:nth-child(1) {
-  /*background-color: #ffc2c2;*/
+  background-color: #ffc2c2;
 }
 
 .scene3D > div:nth-child(2) {

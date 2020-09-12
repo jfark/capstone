@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function() {
 }
 
 function appendFilms(films) {
-  const filmsEl = document.querySelector(".viewport .scene3D");
+  THIS SEEMS IMPORTANT MAYBE ----> const filmsEl = document.querySelector(".viewport .scene3D");
   let filmsNodes = [];
 
   for (film of films) {
@@ -67,10 +67,15 @@ function setSceneHeight() {
     getComputedStyle(document.documentElement).getPropertyValue("--cameraSpeed")
   );
 
-  const height =
+ /* const height =
     window.innerHeight +
     scenePerspective * cameraSpeed +
-    itemZ * cameraSpeed * numberOfItems;
+    itemZ * cameraSpeed * numberOfItems;*/
+  
+const height =
+    window.innerHeight +
+    scenePerspective * cameraSpeed +
+    itemZ * cameraSpeed * 3;
  
 
   document.documentElement.style.setProperty("--viewportHeight", height);
