@@ -16,10 +16,10 @@ const perspectiveOrigin = {
 
 document.addEventListener("DOMContentLoaded", function() {
   axios
-    /*.get("https://ghibliapi.herokuapp.com/films")*/
+   .get("https://ghibliapi.herokuapp.com/films")
     .then(function(response) {
-      /*films = response.data;
-      appendFilms(films);*/
+      films = response.data;
+      appendFilms(films);
       window.addEventListener("scroll", moveCamera);
       window.addEventListener("mousemove", moveCameraAngle);
       setSceneHeight();
@@ -67,17 +67,11 @@ function setSceneHeight() {
     getComputedStyle(document.documentElement).getPropertyValue("--cameraSpeed")
   );
 
-  /*-----Duplicating this to try changing out elements (numberOfItems)-----
   const height =
     window.innerHeight +
     scenePerspective * cameraSpeed +
     itemZ * cameraSpeed * numberOfItems;
-  */
-
-const height =
-  window.innerHeight +
-  scenePerspective * cameraSpeed +
-  itemZ * cameraSpeed * 2;
+ 
 
   document.documentElement.style.setProperty("--viewportHeight", height);
 }

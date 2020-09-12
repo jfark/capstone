@@ -56,7 +56,7 @@ li {
 }
 
 
-.second-scene {
+.second-scene-1, .second-scene-2 {
 	padding: 0 20%;
 	align-items: center;
 }
@@ -263,7 +263,7 @@ label {
   top: 40%;
 }*/
 
-.viewport .scene3D-container .scene3D > .second-scene {
+.viewport .scene3D-container .scene3D > div {
   position: absolute;
   display: block;
   width: 100%;
@@ -280,15 +280,19 @@ label {
   left: 0;
 }*/
 
-.viewport .scene3D-container .scene3D > .second-scene  {
+.viewport .scene3D-container .scene3D > .second-scene-1  {
   left: 0;
 }
 
-.viewport .scene3D-container .scene3D > div:nth-child(2n + 1) {
+.viewport .scene3D-container .scene3D > .second-scene-2 {
   right: 0;
 }
 
-.viewport .scene3D-container .scene3D > .second-scene {
+/*.viewport .scene3D-container .scene3D > div:nth-child(2n + 1) {
+  right: 0;
+  }*/
+
+.viewport .scene3D-container .scene3D > .second-scene-1 {
   -webkit-transform: translate3D(22%, 30%, calc(var(--itemZ) * var(--cameraSpeed) * 0 * -1px));
           transform: translate3D(22%, 30%, calc(var(--itemZ) * var(--cameraSpeed) * 0 * -1px));
 }
@@ -298,7 +302,7 @@ label {
           transform: translate3D(22%, 30%, calc(var(--itemZ) * var(--cameraSpeed) * 0 * -1px));
 }*/
 
-.viewport .scene3D-container .scene3D > .second-scene {
+.viewport .scene3D-container .scene3D > .second-scene-1 {
   -webkit-transform: translate3D(10%, -3%, calc(var(--itemZ) * var(--cameraSpeed) * 1 * -1px));
           transform: translate3D(10%, -3%, calc(var(--itemZ) * var(--cameraSpeed) * 1 * -1px));
 }
@@ -308,7 +312,7 @@ label {
           transform: translate3D(10%, -3%, calc(var(--itemZ) * var(--cameraSpeed) * 1 * -1px));
 }*/
 
-.viewport .scene3D-container .scene3D > .second-scene {
+.viewport .scene3D-container .scene3D > .second-scene-2 {
   -webkit-transform: translate3D(-15%, -5%, calc(var(--itemZ) * var(--cameraSpeed) * 2 * -1px));
           transform: translate3D(-15%, -5%, calc(var(--itemZ) * var(--cameraSpeed) * 2 * -1px));
 }
