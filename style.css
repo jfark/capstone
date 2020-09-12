@@ -256,7 +256,14 @@ label {
   will-change: transform;
 }
 
-.viewport .scene3D-container .scene3D > div {
+/*.viewport .scene3D-container .scene3D > div {
+  position: absolute;
+  display: block;
+  width: 100%;
+  top: 40%;
+}*/
+
+.viewport .scene3D-container .scene3D > .second-scene {
   position: absolute;
   display: block;
   width: 100%;
@@ -269,7 +276,11 @@ label {
   }
 }
 
-.viewport .scene3D-container .scene3D > div:nth-child(2n) {
+/*.viewport .scene3D-container .scene3D > div:nth-child(2n) {
+  left: 0;
+}*/
+
+.viewport .scene3D-container .scene3D > .second-scene  {
   left: 0;
 }
 
@@ -277,10 +288,15 @@ label {
   right: 0;
 }
 
-.viewport .scene3D-container .scene3D > div:nth-child(0) {
+.viewport .scene3D-container .scene3D > .second-scene {
   -webkit-transform: translate3D(22%, 30%, calc(var(--itemZ) * var(--cameraSpeed) * 0 * -1px));
           transform: translate3D(22%, 30%, calc(var(--itemZ) * var(--cameraSpeed) * 0 * -1px));
 }
+
+/*.viewport .scene3D-container .scene3D > div:nth-child(0) {
+  -webkit-transform: translate3D(22%, 30%, calc(var(--itemZ) * var(--cameraSpeed) * 0 * -1px));
+          transform: translate3D(22%, 30%, calc(var(--itemZ) * var(--cameraSpeed) * 0 * -1px));
+}*/
 
 .viewport .scene3D-container .scene3D > div:nth-child(1) {
   -webkit-transform: translate3D(10%, -3%, calc(var(--itemZ) * var(--cameraSpeed) * 1 * -1px));
