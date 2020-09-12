@@ -1,3 +1,5 @@
+/*--------Code from Perfect Wave Carousel Project-------*/
+
 var carousel = document.querySelector('.carousel');
 var cells = carousel.querySelectorAll('.carousel__cell');
 var cellCount; // cellCount set from cells-range input value
@@ -72,3 +74,5 @@ function onOrientationChange() {
 
 // set initials
 onOrientationChange();
+
+/*--------Code from Vincent Humeau CSS 3D Demo-------*/
