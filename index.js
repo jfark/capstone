@@ -15,18 +15,9 @@ const perspectiveOrigin = {
 };
 
 document.addEventListener("DOMContentLoaded", function() {
-  axios
-   .get("https://ghibliapi.herokuapp.com/films")
-    .then(function(response) {
-      films = response.data;
-      appendFilms(films);
-      window.addEventListener("scroll", moveCamera);
-      window.addEventListener("mousemove", moveCameraAngle);
-      setSceneHeight();
-    })
-    .catch(function(error) {
-      console.log(error);
-    });
+	window.addEventListener("scroll", moveCamera);
+	window.addEventListener("mousemove", moveCameraAngle);
+	setSceneHeight();
 });
 
 /*function createFilmItem(film) {
@@ -67,15 +58,10 @@ function setSceneHeight() {
     getComputedStyle(document.documentElement).getPropertyValue("--cameraSpeed")
   );
 
- /* const height =
-    window.innerHeight +
-    scenePerspective * cameraSpeed +
-    itemZ * cameraSpeed * numberOfItems;*/
-  
 const height =
     window.innerHeight +
     scenePerspective * cameraSpeed +
-    itemZ * cameraSpeed * 3;
+    itemZ * cameraSpeed * numberOfItems;
  
 
   document.documentElement.style.setProperty("--viewportHeight", height);
