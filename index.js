@@ -46,7 +46,8 @@ function moveCamera() {
 
 function setSceneHeight() {
   /*const numberOfItems = films.length;*/
-  const itemZ = parseFloat(
+	const numberOfItems = 5;
+	const itemZ = parseFloat(
     getComputedStyle(document.documentElement).getPropertyValue("--itemZ")
   );
   const scenePerspective = parseFloat(
