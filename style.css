@@ -69,6 +69,24 @@ li {
 	perspective: 1000px;
 }
 
+button {
+	background: black;
+	width: 40%;
+}
+
+.previous-button {
+	position: fixed;
+	top: -20px;
+	left: 0;
+	background: yellow;
+}
+
+.next-button {
+	position: fixed;
+	top: -20;
+	right: 0;
+	background: green;
+}
 
 /*
 .carousel-nav-buttons {

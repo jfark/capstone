@@ -5,6 +5,10 @@ Vue.component ('the-portfolio', {
 	template: `
 		<div class="carousel">
 			<div class="carousel__cell"><p>{{project.title}}</p></div>
+			<div class="carousel-nav-buttons">
+			    <button @click="rotateCarousel()" class="previous-button">Previous Slide</button>
+			    <button @click="rotateCarousel()" class="next-button">Next Slide</button>
+			</div>
 			<div class="carousel__cell">
 				<div class="carousel_title">
 					<span class="highlight">{{project.slide1}}</span>
@@ -60,26 +64,7 @@ Vue.component ('the-portfolio', {
 				<img v-bind:src="project.image9" alt="title"/>
 			</div>
 			
-		  </div>
-			<div class="carousel-options">
-			    <label>
-			      <input class="cells-range" type="range" min="3" max="15" value="9" />
-			    </label>
-				<div class="carousel-nav-buttons">
-				    <button class="previous-button"></button>
-				    <button class="next-button"></button>
-				</div>
-	    
-				    <label class="orientation">
-						Orientation:
-				      <input type="radio" name="orientation" value="horizontal" checked />
-				      horizontal
-				    </label>
-				    <label class="orientation">
-				      <input type="radio" name="orientation" value="vertical" />
-				      vertical
-				    </label>
-			</div>
+			
 		</div>
 
 		
