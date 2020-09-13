@@ -15,22 +15,26 @@ const perspectiveOrigin = {
 };
 
 document.addEventListener("DOMContentLoaded", function() {
+	.get("barneswitzarray.txt")
+	    .then(function(response) {
+	      films = response.data;
+	      appendFilms(films);
 	window.addEventListener("scroll", moveCamera);
 	window.addEventListener("mousemove", moveCameraAngle);
 	setSceneHeight();
 });
 
-/*function createFilmItem(film) {
+function createFilmItem(film) {
   return `<div>
-    <h2>${film.title}</h2>
-    <p>Year: ${film.release_date}</p>
-    <p>Director: ${film.director}</p>
-    <p>${film.description}</p>
+    <h2>${film.room}</h2>
+    <p>Year: ${film.ensemble}</p>
+    <p>Director: ${film.title}</p>
+    <img>${film.slide1}</img>
   </div>`;
 }
 
 function appendFilms(films) {
-  THIS SEEMS IMPORTANT MAYBE ----> const filmsEl = document.querySelector(".viewport .scene3D");
+  const filmsEl = document.querySelector(".viewport .scene3D");
   let filmsNodes = [];
 
   for (film of films) {
@@ -38,7 +42,7 @@ function appendFilms(films) {
   }
 
   filmsEl.innerHTML = filmsNodes.join(" ");
-}*/
+}
 
 function moveCamera() {
   document.documentElement.style.setProperty("--cameraZ", window.pageYOffset);
@@ -46,7 +50,8 @@ function moveCamera() {
 
 function setSceneHeight() {
   /*const numberOfItems = films.length;*/
-	const numberOfItems = 5;
+	/*const numberOfItems = 5;*/
+	const numberOfItems = films.length;
 	const itemZ = parseFloat(
     getComputedStyle(document.documentElement).getPropertyValue("--itemZ")
   );
