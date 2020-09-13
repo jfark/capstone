@@ -3,6 +3,86 @@
 Vue.component ('the-portfolio', {
 	props: ['project'],
 	template: `
+		<div class="carousel">
+			<div class="carousel__cell"><p>{{project.title}}</p></div>
+			<div class="carousel__cell">
+				<div class="carousel_title">
+					<span class="highlight">{{project.slide1}}</span>
+				</div>
+				<img v-bind:src="project.image1" alt="title"/>
+			</div>
+		    <div class="carousel__cell">
+				<div class="carousel_title">
+					<span class="highlight">{{project.slide2}}</span>
+				</div>
+				<img v-bind:src="project.image2" alt="title"/>
+			</div>
+		    <div class="carousel__cell">
+				<div class="carousel_title">
+					<span class="highlight">{{project.slide3}}</span>
+				</div>
+				<img v-bind:src="project.image3" alt="title"/>
+			</div>
+		    <div class="carousel__cell">
+				<div class="carousel_title">
+					<span class="highlight">{{project.slide4}}</span>
+				</div>
+				<img v-bind:src="project.image4" alt="title"/>
+			</div>
+		    <div class="carousel__cell">
+				<div class="carousel_title">
+					<span class="highlight">{{project.slide5}}</span>
+				</div>
+				<img v-bind:src="project.image5" alt="title"/>
+			</div>
+		    <div class="carousel__cell">
+				<div class="carousel_title">
+					<span class="highlight">{{project.slide6}}</span>
+				</div>
+				<img v-bind:src="project.image6" alt="title"/>
+			</div>
+		    <div class="carousel__cell">
+				<div class="carousel_title">
+					<span class="highlight">{{project.slide7}}</span>
+				</div>
+				<img v-bind:src="project.image7" alt="title"/>
+			</div>
+		    <div class="carousel__cell">
+				<div class="carousel_title">
+					<span class="highlight">{{project.slide8}}</span>
+				</div>
+				<img v-bind:src="project.image8" alt="title"/>
+			</div>
+		    <div class="carousel__cell">
+				<div class="carousel_title">
+					<span class="highlight">{{project.slide9}}</span>
+				</div>
+				<img v-bind:src="project.image9" alt="title"/>
+			</div>
+			
+		  </div>
+		</div>
+
+		<div class="carousel-options">
+		    <label>
+		      <input class="cells-range" type="range" min="3" max="15" value="9" />
+		    </label>
+			<div class="carousel-nav-buttons">
+			    <button class="previous-button"></button>
+			    <button class="next-button"></button>
+			</div>
+			    
+			    <label class="orientation">
+					Orientation:
+			      <input type="radio" name="orientation" value="horizontal" checked />
+			      horizontal
+			    </label>
+			    <label class="orientation">
+			      <input type="radio" name="orientation" value="vertical" />
+			      vertical
+			    </label>
+		</div>
+					
 		<div class="portfolioNode">
 			<h3 class="nodeTitle">{{project.title}}</h3>
 			<p class="nodeCaption">{{project.caption}}</p>
@@ -14,7 +94,11 @@ Vue.component ('the-portfolio', {
 	data: function() {
 		return {portfolio: []}
 	},
-	
+	methods: {
+		newTab: function(url){
+			window.open(url, "_blank");
+		}
+	}
 });
 
 var portfolioProjects = new Vue ({
@@ -25,24 +109,13 @@ var portfolioProjects = new Vue ({
 		imageInput: "",
 		portfolio: [
 			{
-				title: "DuBois + Baldwin Reader / MCAD Spring 2019: Typography",
+				title: "Room 1",
 				image: 'images/reader.png',
-				caption: 'A "reader" system developed to showcase pairs of important literary voices, such as W.E.B. DuBois and James Baldwin. The design was conceived to highlight the differences and similarities in tone by prominently displaying the year published, and by revealing pull quotes in an interactive scrollable manner.',
-				link: "https://jfarkas.studio.mcad.edu/typography/readerforwebFinal/",
+				image1: 'images/60.jpg',
+				image2: 'images/33.jpg',
+				image3: 'images/14.jpg',
 				
-			},
-			{
-				title: "Future Shuttle Album Art",
-				image: 'images/fs.jpg',
-				caption: "Design of album artwork and cassette tape shell.",
-				link: "https://lillernetapes.bandcamp.com/album/won-goes",
 				
-			},
-			{
-				title: "Digital Illustration / Animation",
-				image: 'images/plantsfull.gif',
-				caption: "Drawn and designed during an Adobe Illustrator course at the Parsons School of Design.",
-				link: false,
 			},
 		]
 	},
@@ -57,24 +130,10 @@ var portfolioProjects = new Vue ({
 		imageInput: "",
 		portfolio: [
 			{
-				title: "DuBois + Baldwin Reader / MCAD Spring 2019: Typography",
+				title: "Room 2",
 				image: 'images/reader.png',
-				caption: 'A "reader" system developed to showcase pairs of important literary voices, such as W.E.B. DuBois and James Baldwin. The design was conceived to highlight the differences and similarities in tone by prominently displaying the year published, and by revealing pull quotes in an interactive scrollable manner.',
-				link: "https://jfarkas.studio.mcad.edu/typography/readerforwebFinal/",
+				image2: 'images/33.jpg',
 				
-			},
-			{
-				title: "Future Shuttle Album Art",
-				image: 'images/fs.jpg',
-				caption: "Design of album artwork and cassette tape shell.",
-				link: "https://lillernetapes.bandcamp.com/album/won-goes",
-				
-			},
-			{
-				title: "Digital Illustration / Animation",
-				image: 'images/plantsfull.gif',
-				caption: "Drawn and designed during an Adobe Illustrator course at the Parsons School of Design.",
-				link: false,
 			},
 			
 		]
@@ -90,24 +149,12 @@ var portfolioProjects = new Vue ({
 		imageInput: "",
 		portfolio: [
 			{
-				title: "DuBois + Baldwin Reader / MCAD Spring 2019: Typography",
+				title: "Room 3",
 				image: 'images/reader.png',
+				image3: 'images/14.jpg',
 				caption: 'A "reader" system developed to showcase pairs of important literary voices, such as W.E.B. DuBois and James Baldwin. The design was conceived to highlight the differences and similarities in tone by prominently displaying the year published, and by revealing pull quotes in an interactive scrollable manner.',
 				link: "https://jfarkas.studio.mcad.edu/typography/readerforwebFinal/",
 				
-			},
-			{
-				title: "Future Shuttle Album Art",
-				image: 'images/fs.jpg',
-				caption: "Design of album artwork and cassette tape shell.",
-				link: "https://lillernetapes.bandcamp.com/album/won-goes",
-				
-			},
-			{
-				title: "Digital Illustration / Animation",
-				image: 'images/plantsfull.gif',
-				caption: "Drawn and designed during an Adobe Illustrator course at the Parsons School of Design.",
-				link: false,
 			},
 			
 		]
@@ -123,24 +170,11 @@ var portfolioProjects = new Vue ({
 		imageInput: "",
 		portfolio: [
 			{
-				title: "DuBois + Baldwin Reader / MCAD Spring 2019: Typography",
+				title: "Room 4",
 				image: 'images/reader.png',
 				caption: 'A "reader" system developed to showcase pairs of important literary voices, such as W.E.B. DuBois and James Baldwin. The design was conceived to highlight the differences and similarities in tone by prominently displaying the year published, and by revealing pull quotes in an interactive scrollable manner.',
 				link: "https://jfarkas.studio.mcad.edu/typography/readerforwebFinal/",
 				
-			},
-			{
-				title: "Future Shuttle Album Art",
-				image: 'images/fs.jpg',
-				caption: "Design of album artwork and cassette tape shell.",
-				link: "https://lillernetapes.bandcamp.com/album/won-goes",
-				
-			},
-			{
-				title: "Digital Illustration / Animation",
-				image: 'images/plantsfull.gif',
-				caption: "Drawn and designed during an Adobe Illustrator course at the Parsons School of Design.",
-				link: false,
 			},
 			
 		]
@@ -156,24 +190,11 @@ var portfolioProjects = new Vue ({
 		imageInput: "",
 		portfolio: [
 			{
-				title: "DuBois + Baldwin Reader / MCAD Spring 2019: Typography",
+				title: "Room 5",
 				image: 'images/reader.png',
 				caption: 'A "reader" system developed to showcase pairs of important literary voices, such as W.E.B. DuBois and James Baldwin. The design was conceived to highlight the differences and similarities in tone by prominently displaying the year published, and by revealing pull quotes in an interactive scrollable manner.',
 				link: "https://jfarkas.studio.mcad.edu/typography/readerforwebFinal/",
 				
-			},
-			{
-				title: "Future Shuttle Album Art",
-				image: 'images/fs.jpg',
-				caption: "Design of album artwork and cassette tape shell.",
-				link: "https://lillernetapes.bandcamp.com/album/won-goes",
-				
-			},
-			{
-				title: "Digital Illustration / Animation",
-				image: 'images/plantsfull.gif',
-				caption: "Drawn and designed during an Adobe Illustrator course at the Parsons School of Design.",
-				link: false,
 			},
 			
 		]
@@ -189,24 +210,11 @@ var portfolioProjects = new Vue ({
 		imageInput: "",
 		portfolio: [
 			{
-				title: "DuBois + Baldwin Reader / MCAD Spring 2019: Typography",
+				title: "Room 6",
 				image: 'images/reader.png',
 				caption: 'A "reader" system developed to showcase pairs of important literary voices, such as W.E.B. DuBois and James Baldwin. The design was conceived to highlight the differences and similarities in tone by prominently displaying the year published, and by revealing pull quotes in an interactive scrollable manner.',
 				link: "https://jfarkas.studio.mcad.edu/typography/readerforwebFinal/",
 				
-			},
-			{
-				title: "Future Shuttle Album Art",
-				image: 'images/fs.jpg',
-				caption: "Design of album artwork and cassette tape shell.",
-				link: "https://lillernetapes.bandcamp.com/album/won-goes",
-				
-			},
-			{
-				title: "Digital Illustration / Animation",
-				image: 'images/plantsfull.gif',
-				caption: "Drawn and designed during an Adobe Illustrator course at the Parsons School of Design.",
-				link: false,
 			},
 			
 		]
@@ -220,6 +228,7 @@ var portfolioProjects = new Vue ({
 
 /*--------Code from Perfect Wave Carousel Project-------*/
 
+/*
 var carousel = document.querySelector('.carousel');
 var cells = carousel.querySelectorAll('.carousel__cell');
 var cellCount; // cellCount set from cells-range input value
