@@ -15,7 +15,7 @@ const perspectiveOrigin = {
 };
 
 document.addEventListener("DOMContentLoaded", function() {
-	.get("barneswitzarray.txt")
+	.get("https://ghibliapi.herokuapp.com/films")
 	    .then(function(response) {
 	      films = response.data;
 	      appendFilms(films);
@@ -26,10 +26,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
 function createFilmItem(film) {
   return `<div>
-    <h2>${film.room}</h2>
-    <p>Year: ${film.ensemble}</p>
-    <p>Director: ${film.title}</p>
-    <img>${film.slide1}</img>
+    <h2>${film.title}</h2>
+    <p>Year: ${film.release-date}</p>
+    <p>Director: ${film.director}</p>
+    <p>${film.description}</p>
   </div>`;
 }
 
@@ -49,8 +49,6 @@ function moveCamera() {
 }
 
 function setSceneHeight() {
-  /*const numberOfItems = films.length;*/
-	/*const numberOfItems = 5;*/
 	const numberOfItems = films.length;
 	const itemZ = parseFloat(
     getComputedStyle(document.documentElement).getPropertyValue("--itemZ")
