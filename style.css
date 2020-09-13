@@ -69,18 +69,19 @@ li {
 	perspective: 1000px;
 }
 
+
 /*
 .carousel-nav-buttons {
-	position: relative;
+	position: fixed;
 	right: 0%;
-	bottom: 0;
+	top: 0;
 }
 
 
 .carousel-nav-buttons button {
 	display: inline;
 	font-family: 'Pangram-ExtraLight', sans-serif;
-	background-color: transparent;
+	background-color: black;
 	color: black;
 	border: black;
 	width: 150px;
@@ -90,6 +91,7 @@ button img {
 	width: 100%;
 }
 */
+
 
 .carousel {
   width: 100%;

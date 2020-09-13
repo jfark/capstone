@@ -61,27 +61,28 @@ Vue.component ('the-portfolio', {
 			</div>
 			
 		  </div>
+			<div class="carousel-options">
+			    <label>
+			      <input class="cells-range" type="range" min="3" max="15" value="9" />
+			    </label>
+				<div class="carousel-nav-buttons">
+				    <button class="previous-button"></button>
+				    <button class="next-button"></button>
+				</div>
+	    
+				    <label class="orientation">
+						Orientation:
+				      <input type="radio" name="orientation" value="horizontal" checked />
+				      horizontal
+				    </label>
+				    <label class="orientation">
+				      <input type="radio" name="orientation" value="vertical" />
+				      vertical
+				    </label>
+			</div>
 		</div>
 
-		<div class="carousel-options">
-		    <label>
-		      <input class="cells-range" type="range" min="3" max="15" value="9" />
-		    </label>
-			<div class="carousel-nav-buttons">
-			    <button class="previous-button"></button>
-			    <button class="next-button"></button>
-			</div>
-			    
-			    <label class="orientation">
-					Orientation:
-			      <input type="radio" name="orientation" value="horizontal" checked />
-			      horizontal
-			    </label>
-			    <label class="orientation">
-			      <input type="radio" name="orientation" value="vertical" />
-			      vertical
-			    </label>
-		</div>
+		
 					
 		<div class="portfolioNode">
 			<h3 class="nodeTitle">{{project.title}}</h3>
@@ -228,7 +229,7 @@ var portfolioProjects = new Vue ({
 
 /*--------Code from Perfect Wave Carousel Project-------*/
 
-/*
+
 var carousel = document.querySelector('.carousel');
 var cells = carousel.querySelectorAll('.carousel__cell');
 var cellCount; // cellCount set from cells-range input value
