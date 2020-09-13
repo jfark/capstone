@@ -20,6 +20,15 @@
       <div class="scene3D-container">
         <div class="scene3D">
 			
+			<div class="portfolioOverall">
+				<div class="portfolioProjects" v-cloak>
+					<div is="the-portfolio" 
+					v-for="project in portfolio"
+					v-bind:project="project">
+					</div>
+				</div>
+			</div>
+			
 			<div class="second-scene-1">
 				<div class="scene">
 				  <div class="carousel">
@@ -565,6 +574,7 @@
 	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 	<script src="script.js"></script>
+	<script src="script2.js"></script>
 	<!--Code from Vincent Humeau CSS 3D Demo-->
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="index.js"></script>
