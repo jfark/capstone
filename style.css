@@ -56,7 +56,7 @@ li {
 }
 
 
-.second-scene-1, .second-scene-2 {
+.second-scene {
 	padding: 0 20%;
 	align-items: center;
 }
@@ -219,7 +219,7 @@ label {
   --scenePerspective: 1;
   --scenePerspectiveOriginX: 50;
   --scenePerspectiveOriginY: 30;
-  --itemZ: 4;
+  --itemZ: 2;
   --cameraSpeed: 150;
   --cameraZ: 0;
   --viewportHeight: 0;
@@ -255,7 +255,6 @@ label {
           transform: translateZ(calc(var(--cameraZ) * 1px));
   will-change: transform;
 }
-
 
 .viewport .scene3D-container .scene3D > div {
   position: absolute;
@@ -416,7 +415,7 @@ label {
 }
 
 body {
-  background-color: white;
+  background-color: #272935;
   color: #272935;
   padding: 0;
   margin: 0;

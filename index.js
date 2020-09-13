@@ -15,19 +15,25 @@ const perspectiveOrigin = {
 };
 
 document.addEventListener("DOMContentLoaded", function() {
-	.get("https://ghibliapi.herokuapp.com/films")
-	    .then(function(response) {
-	      films = response.data;
-	      appendFilms(films);
-	window.addEventListener("scroll", moveCamera);
-	window.addEventListener("mousemove", moveCameraAngle);
-	setSceneHeight();
+  /*axios
+    .get("https://jessa-farkas.com/barneswitzarray.html")
+    .then(function(response) {
+      films = response.data;
+      appendFilms(films);*/
+      window.addEventListener("scroll", moveCamera);
+      window.addEventListener("mousemove", moveCameraAngle);
+      setSceneHeight();
+    /*})
+    .catch(function(error) {
+      console.log(error);
+    });*/
 });
 
+/*
 function createFilmItem(film) {
   return `<div>
     <h2>${film.title}</h2>
-    <p>Year: ${film.release-date}</p>
+    <p>Year: ${film.release_date}</p>
     <p>Director: ${film.director}</p>
     <p>${film.description}</p>
   </div>`;
@@ -43,14 +49,15 @@ function appendFilms(films) {
 
   filmsEl.innerHTML = filmsNodes.join(" ");
 }
+*/
 
 function moveCamera() {
   document.documentElement.style.setProperty("--cameraZ", window.pageYOffset);
 }
 
 function setSceneHeight() {
-	const numberOfItems = films.length;
-	const itemZ = parseFloat(
+  const numberOfItems = 5;
+  const itemZ = parseFloat(
     getComputedStyle(document.documentElement).getPropertyValue("--itemZ")
   );
   const scenePerspective = parseFloat(
@@ -62,11 +69,10 @@ function setSceneHeight() {
     getComputedStyle(document.documentElement).getPropertyValue("--cameraSpeed")
   );
 
-const height =
+  const height =
     window.innerHeight +
     scenePerspective * cameraSpeed +
     itemZ * cameraSpeed * numberOfItems;
- 
 
   document.documentElement.style.setProperty("--viewportHeight", height);
 }
