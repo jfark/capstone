@@ -15,11 +15,6 @@ const perspectiveOrigin = {
 };
 
 document.addEventListener("DOMContentLoaded", function() {
-  /*axios
-    .get("https://jessa-farkas.com/barneswitzarray.html")
-    .then(function(response) {
-      films = response.data;
-      appendFilms(films);*/
       window.addEventListener("scroll", moveCamera);
       window.addEventListener("mousemove", moveCameraAngle);
       setSceneHeight();
