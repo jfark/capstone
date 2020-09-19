@@ -27,15 +27,6 @@ main {
 	margin-top: 8%;
 }
 
-.logo2 {
-	flex: .5;
-	align-items: center;
-	padding: 2%;
-}
-
-.logo2 img {
-	max-width: 50%;
-}
 
 ul {
 	list-style-type: none;
@@ -56,7 +47,7 @@ li {
 }
 
 
-.second-scene {
+/*.second-scene {
 	padding: 0 20%;
 	align-items: center;
 }
@@ -68,6 +59,7 @@ li {
 	height: 140px;
 	perspective: 1000px;
 }
+*/
 
 button {
 	background: black;
@@ -120,7 +112,7 @@ button img {
   transition: transform 1s;
 }
 
-.carousel__cell {
+.carouselNode {
   position: absolute;
   width: 440px;
   height: 400px;
@@ -188,52 +180,52 @@ label {
 	display: none;
 }
 
-.carousel__cell:nth-child(9n+1) { 
+.carouselNode:nth-child(9n+1) { 
 	background: hsla(3, 97%, 61%, 1);
 	border: 10px solid #fc443b; 
 }
-.carousel__cell:nth-child(9n+2) { 
+.carouselNode:nth-child(9n+2) { 
 	background: hsla(54, 69%, 82%, .95); 
 	border: 10px solid #3f5b44; 
 }
-.carousel__cell:nth-child(9n+3) { 
+.carouselNode:nth-child(9n+3) { 
 	background: hsla(54, 69%, 82%,.95);
 	border: 10px solid #3f5b44;  
 }
-.carousel__cell:nth-child(9n+4) { 
+.carouselNode:nth-child(9n+4) { 
 	background: hsla(54, 69%, 82%,.95);
 	border: 10px solid #3f5b44;  
 }
-.carousel__cell:nth-child(9n+5) { 
+.carouselNode:nth-child(9n+5) { 
 	background: hsla(54, 69%, 82%,.95);
 	border: 10px solid #3f5b44;  
 }
-.carousel__cell:nth-child(9n+6) { 
+.carouselNode:nth-child(9n+6) { 
 	background: hsla(54, 69%, 82%,.95);
 	border: 10px solid #3f5b44;  
 }
-.carousel__cell:nth-child(9n+7) { 
+.carouselNode:nth-child(9n+7) { 
 	background: hsla(54, 69%, 82%,.95);
 	border: 10px solid #3f5b44;  
 }
-.carousel__cell:nth-child(9n+8) { 
+.carouselNode:nth-child(9n+8) { 
 	background: hsla(54, 69%, 82%,.95);
 	border: 10px solid #3f5b44;  
 }
-.carousel__cell:nth-child(9n+0) { 
+.carouselNode:nth-child(9n+0) { 
 	background: hsla(54, 69%, 82%,.95);
 	border: 10px solid #3f5b44;  
 }
 
-.carousel__cell:nth-child(1) { transform: rotateY(  0deg) translateZ(769px); }
-.carousel__cell:nth-child(2) { transform: rotateY( 40deg) translateZ(769px); }
-.carousel__cell:nth-child(3) { transform: rotateY( 80deg) translateZ(769px); }
-.carousel__cell:nth-child(4) { transform: rotateY(120deg) translateZ(769px); }
-.carousel__cell:nth-child(5) { transform: rotateY(160deg) translateZ(769px); }
-.carousel__cell:nth-child(6) { transform: rotateY(200deg) translateZ(769px); }
-.carousel__cell:nth-child(7) { transform: rotateY(240deg) translateZ(769px); }
-.carousel__cell:nth-child(8) { transform: rotateY(280deg) translateZ(769px); }
-.carousel__cell:nth-child(9) { transform: rotateY(320deg) translateZ(769px); }
+.carouselNode:nth-child(1) { transform: rotateY(  0deg) translateZ(769px); }
+.carouselNode:nth-child(2) { transform: rotateY( 40deg) translateZ(769px); }
+.carouselNode:nth-child(3) { transform: rotateY( 80deg) translateZ(769px); }
+.carouselNode:nth-child(4) { transform: rotateY(120deg) translateZ(769px); }
+.carouselNode:nth-child(5) { transform: rotateY(160deg) translateZ(769px); }
+.carouselNode:nth-child(6) { transform: rotateY(200deg) translateZ(769px); }
+.carouselNode:nth-child(7) { transform: rotateY(240deg) translateZ(769px); }
+.carouselNode:nth-child(8) { transform: rotateY(280deg) translateZ(769px); }
+.carouselNode:nth-child(9) { transform: rotateY(320deg) translateZ(769px); }
 
 /*--------Code from Vincent Humeau CSS 3D Demo-------*/
 

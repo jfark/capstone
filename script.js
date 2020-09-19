@@ -1,5 +1,16 @@
 /*--------Code from JF Portfolio-------*/
 
+/* for ref from HTML
+			<div class="carouselOverall">
+				<div class="carouselCell" v-cloak>
+					<div is="the-carousel" 
+					v-for="cell in carousel"
+					v-bind:project="cell">
+					</div>
+				</div>
+			</div>
+*/
+
 Vue.component ('the-carousel', {
 	props: ['cell'],
 	template: `
