@@ -1,114 +1,75 @@
 /*--------Code from JF Portfolio-------*/
 
-Vue.component ('the-portfolio', {
-	props: ['project'],
+Vue.component ('the-carousel', {
+	props: ['cell'],
 	template: `
-		<div class="carousel">
-			<div class="carousel__cell"><p>{{project.title}}</p></div>
-			<div class="carousel-nav-buttons">
-			    <button class="previous-button">Previous Slide</button>
-			    <button class="next-button">Next Slide</button>
-			</div>
+		<div class="carouselNode">
 			<div class="carousel__cell">
-				<div class="carousel_title">
-					<span class="highlight">{{project.slide1}}</span>
+				<p class="carousel_title">{{cell.title}}</p>
+				<div class="nodeImage"><img v-bind:src="cell.image" alt="title"/></div>
+				<div class="carousel-nav-buttons">
+				    <button class="previous-button">Previous Slide</button>
+				    <button class="next-button">Next Slide</button>
 				</div>
-				<img v-bind:src="project.image1" alt="title"/>
 			</div>
-		    <div class="carousel__cell">
-				<div class="carousel_title">
-					<span class="highlight">{{project.slide2}}</span>
-				</div>
-				<img v-bind:src="project.image2" alt="title"/>
-			</div>
-		    <div class="carousel__cell">
-				<div class="carousel_title">
-					<span class="highlight">{{project.slide3}}</span>
-				</div>
-				<img v-bind:src="project.image3" alt="title"/>
-			</div>
-		    <div class="carousel__cell">
-				<div class="carousel_title">
-					<span class="highlight">{{project.slide4}}</span>
-				</div>
-				<img v-bind:src="project.image4" alt="title"/>
-			</div>
-		    <div class="carousel__cell">
-				<div class="carousel_title">
-					<span class="highlight">{{project.slide5}}</span>
-				</div>
-				<img v-bind:src="project.image5" alt="title"/>
-			</div>
-		    <div class="carousel__cell">
-				<div class="carousel_title">
-					<span class="highlight">{{project.slide6}}</span>
-				</div>
-				<img v-bind:src="project.image6" alt="title"/>
-			</div>
-		    <div class="carousel__cell">
-				<div class="carousel_title">
-					<span class="highlight">{{project.slide7}}</span>
-				</div>
-				<img v-bind:src="project.image7" alt="title"/>
-			</div>
-		    <div class="carousel__cell">
-				<div class="carousel_title">
-					<span class="highlight">{{project.slide8}}</span>
-				</div>
-				<img v-bind:src="project.image8" alt="title"/>
-			</div>
-		    <div class="carousel__cell">
-				<div class="carousel_title">
-					<span class="highlight">{{project.slide9}}</span>
-				</div>
-				<img v-bind:src="project.image9" alt="title"/>
-			</div>
+		</div`,
 			
-			
-		</div>
-
-		
-					
-		<div class="portfolioNode">
-			<h3 class="nodeTitle">{{project.title}}</h3>
-			<p class="nodeCaption">{{project.caption}}</p>
-			<div class="nodeImageContainer">
-				<div class="nodeImage"><img v-bind:src="project.image" alt="title"/></div>
-			</div>
-			<a class="nodeLink" href="#" v-if="project.link!==false" v-on:mouseover.prevent="newTab(project.link)">Link to Project</a>
-		</div>`,
 	data: function() {
-		return {portfolio: []}
+		return {carousel: []}
 	},
-	methods: {
+	/*methods: {
 		newTab: function(url){
 			window.open(url, "_blank");
 		}
-	}
+	}*/
 });
 
-var portfolioProjects = new Vue ({
-	el: ".portfolioOverall",
+var carouselCell = new Vue ({
+	el: ".carouselOverall",
 	data: {
-		titleInput: "",
-		captionInput: "",
-		imageInput: "",
-		portfolio: [
+		carousel: [
 			{
 				title: "Room 1",
-				image: 'images/reader.png',
-				image1: 'images/60.jpg',
-				image2: 'images/33.jpg',
-				image3: 'images/14.jpg',
-				
-				
+				image: 'images/14.jpg',
+			},
+			{
+				title: "Room 1",
+				image: 'images/14.jpg',
+			},
+			{
+				title: "Room 1",
+				image: 'images/14.jpg',
+			},
+			{
+				title: "Room 1",
+				image: 'images/14.jpg',
+			},
+			{
+				title: "Room 1",
+				image: 'images/14.jpg',
+			},
+			{
+				title: "Room 1",
+				image: 'images/14.jpg',
+			},
+			{
+				title: "Room 1",
+				image: 'images/14.jpg',
+			},
+			{
+				title: "Room 1",
+				image: 'images/14.jpg',
+			},
+			{
+				title: "Room 1",
+				image: 'images/14.jpg',
 			},
 		]
 	},
 	
 });
 
-var portfolioProjects = new Vue ({
+/*var portfolioProjects = new Vue ({
 	el: ".portfolioOverall2",
 	data: {
 		titleInput: "",
