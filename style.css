@@ -112,7 +112,7 @@ button img {
   transition: transform 1s;
 }
 
-.carousel__cell {
+.carouselCell {
   position: absolute;
   width: 440px;
   height: 400px;
@@ -180,52 +180,52 @@ label {
 	display: none;
 }
 
-.carousel__cell:nth-child(9n+1) { 
+.carouselCell:nth-child(9n+1) { 
 	background: hsla(3, 97%, 61%, 1);
 	border: 10px solid #fc443b; 
 }
-.carousel__cell:nth-child(9n+2) { 
+.carouselCell:nth-child(9n+2) { 
 	background: hsla(54, 69%, 82%, .95); 
 	border: 10px solid #3f5b44; 
 }
-.carousel__cell:nth-child(9n+3) { 
+.carouselCell:nth-child(9n+3) { 
 	background: hsla(54, 69%, 82%,.95);
 	border: 10px solid #3f5b44;  
 }
-.carousel__cell:nth-child(9n+4) { 
+.carouselCell:nth-child(9n+4) { 
 	background: hsla(54, 69%, 82%,.95);
 	border: 10px solid #3f5b44;  
 }
-.carousel__cell:nth-child(9n+5) { 
+.carouselCell:nth-child(9n+5) { 
 	background: hsla(54, 69%, 82%,.95);
 	border: 10px solid #3f5b44;  
 }
-.carousel__cell:nth-child(9n+6) { 
+.carouselCell:nth-child(9n+6) { 
 	background: hsla(54, 69%, 82%,.95);
 	border: 10px solid #3f5b44;  
 }
-.carousel__cell:nth-child(9n+7) { 
+.carouselCell:nth-child(9n+7) { 
 	background: hsla(54, 69%, 82%,.95);
 	border: 10px solid #3f5b44;  
 }
-.carousel__cell:nth-child(9n+8) { 
+.carouselCell:nth-child(9n+8) { 
 	background: hsla(54, 69%, 82%,.95);
 	border: 10px solid #3f5b44;  
 }
-.carousel__cell:nth-child(9n+0) { 
+.carouselCell:nth-child(9n+0) { 
 	background: hsla(54, 69%, 82%,.95);
 	border: 10px solid #3f5b44;  
 }
 
-.carousel__cell:nth-child(1) { transform: rotateY(  0deg) translateZ(769px); }
-.carousel__cell:nth-child(2) { transform: rotateY( 40deg) translateZ(769px); }
-.carousel__cell:nth-child(3) { transform: rotateY( 80deg) translateZ(769px); }
-.carousel__cell:nth-child(4) { transform: rotateY(120deg) translateZ(769px); }
-.carousel__cell:nth-child(5) { transform: rotateY(160deg) translateZ(769px); }
-.carousel__cell:nth-child(6) { transform: rotateY(200deg) translateZ(769px); }
-.carousel__cell:nth-child(7) { transform: rotateY(240deg) translateZ(769px); }
-.carousel__cell:nth-child(8) { transform: rotateY(280deg) translateZ(769px); }
-.carousel__cell:nth-child(9) { transform: rotateY(320deg) translateZ(769px); }
+.carouselCell:nth-child(1) { transform: rotateY(  0deg) translateZ(769px); }
+.carouselCell:nth-child(2) { transform: rotateY( 40deg) translateZ(769px); }
+.carouselCell:nth-child(3) { transform: rotateY( 80deg) translateZ(769px); }
+.carouselCell:nth-child(4) { transform: rotateY(120deg) translateZ(769px); }
+.carouselCell:nth-child(5) { transform: rotateY(160deg) translateZ(769px); }
+.carouselCell:nth-child(6) { transform: rotateY(200deg) translateZ(769px); }
+.carouselCell:nth-child(7) { transform: rotateY(240deg) translateZ(769px); }
+.carouselCell:nth-child(8) { transform: rotateY(280deg) translateZ(769px); }
+.carouselCell:nth-child(9) { transform: rotateY(320deg) translateZ(769px); }
 
 /*--------Code from Vincent Humeau CSS 3D Demo-------*/
 
