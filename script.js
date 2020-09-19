@@ -5,14 +5,12 @@ Vue.component ('the-carousel', {
 	template: `
 		<div class="carouselNode">
 			<div class="carousel__cell">
-				<p class="carousel_title">{{cell.title}}</p>
-				<div class="nodeImage"><img v-bind:src="cell.image" alt="title"/></div>
-				<div class="carousel-nav-buttons">
-				    <button class="previous-button">Previous Slide</button>
-				    <button class="next-button">Next Slide</button>
-				</div>
+				<div class="carousel_title">
+					<p>{{cell.title}}</p>
+				</div
+				<div><img v-bind:src="cell.image" alt="title"/></div>
 			</div>
-		</div`,
+		</div>`,
 			
 	data: function() {
 		return {carousel: []}
