@@ -106,7 +106,7 @@ button img {
 	perspective: 1000px;
 }
 
-.the-carousel {
+.carouselCell {
   width: 100%;
   height: 100%;
   position: absolute;
