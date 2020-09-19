@@ -52,13 +52,7 @@ li {
 	align-items: center;
 }
 
-.scene {
-	margin: 0 20%;
-	position: relative;
-	width: 470px;
-	height: 140px;
-	perspective: 1000px;
-}
+
 
 
 button {
@@ -103,7 +97,16 @@ button img {
 
 
 */
-.carousel {
+
+.carouselOverall {
+	margin: 0 20%;
+	position: relative;
+	width: 470px;
+	height: 140px;
+	perspective: 1000px;
+}
+
+.the-carousel {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -113,7 +116,7 @@ button img {
 }
 
 
-.carouselCell {
+.carouselNode {
   position: absolute;
   width: 440px;
   height: 400px;
@@ -151,7 +154,7 @@ button img {
 	
 }
 
-.carousel img {
+.carouselNode img {
 	max-width: 60%;
 }
 
@@ -181,39 +184,39 @@ label {
 	display: none;
 }
 
-.carouselCell:nth-child(9n+1) { 
+.carouselNode:nth-child(9n+1) { 
 	background: hsla(3, 97%, 61%, 1);
 	border: 10px solid #fc443b; 
 }
-.carouselCell:nth-child(9n+2) { 
+.carouselNode:nth-child(9n+2) { 
 	background: hsla(54, 69%, 82%, .95); 
 	border: 10px solid #3f5b44; 
 }
-.carouselCell:nth-child(9n+3) { 
+.carouselNode:nth-child(9n+3) { 
 	background: hsla(54, 69%, 82%,.95);
 	border: 10px solid #3f5b44;  
 }
-.carouselCell:nth-child(9n+4) { 
+.carouselNode:nth-child(9n+4) { 
 	background: hsla(54, 69%, 82%,.95);
 	border: 10px solid #3f5b44;  
 }
-.carouselCell:nth-child(9n+5) { 
+.carouselNode:nth-child(9n+5) { 
 	background: hsla(54, 69%, 82%,.95);
 	border: 10px solid #3f5b44;  
 }
-.carouselCell:nth-child(9n+6) { 
+.carouselNode:nth-child(9n+6) { 
 	background: hsla(54, 69%, 82%,.95);
 	border: 10px solid #3f5b44;  
 }
-.carouselCell:nth-child(9n+7) { 
+.carouselNode:nth-child(9n+7) { 
 	background: hsla(54, 69%, 82%,.95);
 	border: 10px solid #3f5b44;  
 }
-.carouselCell:nth-child(9n+8) { 
+.carouselNode:nth-child(9n+8) { 
 	background: hsla(54, 69%, 82%,.95);
 	border: 10px solid #3f5b44;  
 }
-.carouselCell:nth-child(9n+0) { 
+.carouselNode:nth-child(9n+0) { 
 	background: hsla(54, 69%, 82%,.95);
 	border: 10px solid #3f5b44;  
 }
