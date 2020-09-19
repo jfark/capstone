@@ -15,12 +15,14 @@ Vue.component ('the-carousel', {
 	props: ['cell'],
 	template: `
 		<div class="carouselNode">
-			<div class="carousel__cell">
-				<div class="carousel_title">
-					<p>{{cell.title}}</p>
-				</div
-				<div><img v-bind:src="cell.image" alt="title"/></div>
-			</div>
+			<div class="carousel"
+				<div class="carousel__cell">
+					<div class="carousel_title">
+						<p>{{cell.title}}</p>
+					</div
+					<div><img v-bind:src="cell.image" alt="title"/></div>
+				</div>
+			</div
 		</div>`,
 			
 	data: function() {

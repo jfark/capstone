@@ -12,7 +12,7 @@ body {
 	background-size: 100%;
 }
 
-main {
+/*main {
 	display: flex;
 	flex-direction: column;
 }
@@ -47,7 +47,7 @@ li {
 }
 
 
-/*.second-scene {
+.second-scene {
 	padding: 0 20%;
 	align-items: center;
 }
@@ -59,7 +59,7 @@ li {
 	height: 140px;
 	perspective: 1000px;
 }
-*/
+
 
 button {
 	background: black;
@@ -80,7 +80,7 @@ button {
 	background: green;
 }
 
-/*
+
 .carousel-nav-buttons {
 	position: fixed;
 	right: 0%;
@@ -100,9 +100,9 @@ button {
 button img {
 	width: 100%;
 }
+
+
 */
-
-
 .carousel {
   width: 100%;
   height: 100%;
@@ -111,6 +111,7 @@ button img {
   transform-style: preserve-3d;
   transition: transform 1s;
 }
+
 
 .carouselCell {
   position: absolute;
@@ -217,15 +218,15 @@ label {
 	border: 10px solid #3f5b44;  
 }
 
-.carouselCell:nth-child(1) { transform: rotateY(  0deg) translateZ(769px); }
-.carouselCell:nth-child(2) { transform: rotateY( 40deg) translateZ(769px); }
-.carouselCell:nth-child(3) { transform: rotateY( 80deg) translateZ(769px); }
-.carouselCell:nth-child(4) { transform: rotateY(120deg) translateZ(769px); }
-.carouselCell:nth-child(5) { transform: rotateY(160deg) translateZ(769px); }
-.carouselCell:nth-child(6) { transform: rotateY(200deg) translateZ(769px); }
-.carouselCell:nth-child(7) { transform: rotateY(240deg) translateZ(769px); }
-.carouselCell:nth-child(8) { transform: rotateY(280deg) translateZ(769px); }
-.carouselCell:nth-child(9) { transform: rotateY(320deg) translateZ(769px); }
+.carouselNode:nth-child(1) { transform: rotateY(  0deg) translateZ(769px); }
+.carouselNode:nth-child(2) { transform: rotateY( 40deg) translateZ(769px); }
+.carouselNode:nth-child(3) { transform: rotateY( 80deg) translateZ(769px); }
+.carouselNode:nth-child(4) { transform: rotateY(120deg) translateZ(769px); }
+.carouselNode:nth-child(5) { transform: rotateY(160deg) translateZ(769px); }
+.carouselNode:nth-child(6) { transform: rotateY(200deg) translateZ(769px); }
+.carouselNode:nth-child(7) { transform: rotateY(240deg) translateZ(769px); }
+.carouselNode:nth-child(8) { transform: rotateY(280deg) translateZ(769px); }
+.carouselNode:nth-child(9) { transform: rotateY(320deg) translateZ(769px); }
 
 /*--------Code from Vincent Humeau CSS 3D Demo-------*/
 
