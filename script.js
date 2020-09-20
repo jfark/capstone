@@ -136,14 +136,3 @@ var projectThree = new Vue ({
 		}
 	}
 });
-
-
-
-
-
-/*--------Code from Perfect Wave Carousel Project-------*/
-
-
-
-
-/*--------Code from Vincent Humeau CSS 3D Demo-------*/

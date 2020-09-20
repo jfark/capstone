@@ -1,36 +1,3 @@
-//Carousel button shift script
-
-var carousel = document.querySelector('.carouselCell');
-var cells = carousel.querySelectorAll('.carouselNode');
-var cellCount; // cellCount set from cells-range input value
-var selectedIndex = 0;
-var cellWidth = carousel.offsetWidth;
-var cellHeight = carousel.offsetHeight;
-var isHorizontal = true;
-var rotateFn = isHorizontal ? 'rotateY' : 'rotateX';
-var radius, theta;
-
-function prevButton() {
-  console.log("Hello world!");
-  selectedIndex--;
-  rotateCarousel();
-};
-
-function nextButton() {
-  console.log("Hello world!");
-  selectedIndex++;
-  rotateCarousel();
-};
-
-function rotateCarousel() {
-  var angle = theta * selectedIndex * -1;
-  carousel.style.transform = 'translateZ(' + -radius + 'px) ' + 
-    rotateFn + '(' + angle + 'deg)';
-};
-
-//begin z-space Script
-
-
 let films = [];
 
 const perspectiveOrigin = {
@@ -51,33 +18,7 @@ document.addEventListener("DOMContentLoaded", function() {
       window.addEventListener("scroll", moveCamera);
       window.addEventListener("mousemove", moveCameraAngle);
       setSceneHeight();
-    /*})
-    .catch(function(error) {
-      console.log(error);
-    });*/
 });
-
-/*
-function createFilmItem(film) {
-  return `<div>
-    <h2>${film.title}</h2>
-    <p>Year: ${film.release_date}</p>
-    <p>Director: ${film.director}</p>
-    <p>${film.description}</p>
-  </div>`;
-}
-
-function appendFilms(films) {
-  const filmsEl = document.querySelector(".viewport .scene3D");
-  let filmsNodes = [];
-
-  for (film of films) {
-    filmsNodes.push(createFilmItem(film));
-  }
-
-  filmsEl.innerHTML = filmsNodes.join(" ");
-}
-*/
 
 function moveCamera() {
   document.documentElement.style.setProperty("--cameraZ", window.pageYOffset);
