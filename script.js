@@ -9,24 +9,37 @@
 					</div>
 				</div>
 			</div>
+
+
+var carousel = document.querySelector('.carouselCell');
+var cells = carousel.querySelectorAll('.carouselNode');
+var cellCount; // cellCount set from cells-range input value
+var selectedIndex = 0;
+var cellWidth = carousel.offsetWidth;
+var cellHeight = carousel.offsetHeight;
+var isHorizontal = true;
+var rotateFn = isHorizontal ? 'rotateY' : 'rotateX';
+var radius, theta;
+
+function rotateCarousel() {
+  var angle = theta * selectedIndex * -1;
+  carousel.style.transform = 'translateZ(' + -radius + 'px) ' + 
+    rotateFn + '(' + angle + 'deg)';
+}
+
 */
+
 
 Vue.component ('the-carousel', {
 	props: ['cell'],
 	template: `
 		<div class="carouselNode">
-			<div class="carousel"
+			<div class="carousel">
 				<div class="carousel__cell">
 					<div class="carousel_title">
 						<p>{{cell.title}}</p>
-					</div
+					</div>
 					<div><img v-bind:src="cell.image" alt="title"/></div>
-				</div>
-			</div>
-			<div class="carousel-options">
-				<div class="carousel-nav-buttons">
-				    <button class="previous-button">previous</button>
-				    <button class="next-button">next</button>
 				</div>
 			</div>
 		</div>`,
@@ -34,11 +47,17 @@ Vue.component ('the-carousel', {
 	data: function() {
 		return {carousel: []}
 	},
-	/*methods: {
-		newTab: function(url){
-			window.open(url, "_blank");
-		}
-	}*/
+	methods: {
+		nextButton: function(){
+		    selectedIndex++;
+		    rotateCarousel();
+		};
+		previousButton: function(){
+		    selectedIndex--;
+		    rotateCarousel();
+		};
+		
+	}
 });
 
 var carouselCell = new Vue ({

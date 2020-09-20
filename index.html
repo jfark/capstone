@@ -11,9 +11,7 @@
 	
 </head>
 
-<body>
-	
-
+<body>	
 <main>
 	
 	<!--Code from Vincent Humeau CSS 3D Demo-->
@@ -29,6 +27,12 @@
 					<div is="the-carousel" 
 					v-for="cell in carousel"
 					v-bind:cell="cell">
+					</div>
+				</div>
+				<div class="carousel-options">
+					<div class="carousel-nav-buttons">
+					    <button class="next-button" v-on:click="nextButton">Next Slide</button>
+						<button class="previous-button" v-on:click="previousButton">Previous Slide</button>
 					</div>
 				</div>
 			</div>

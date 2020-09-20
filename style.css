@@ -55,32 +55,28 @@ li {
 
 */
 
-button {
-	background: black;
-	width: 40%;
-}
-
 .previous-button {
-	position: fixed;
 	top: -20px;
 	left: 0;
 	background: yellow;
 }
 
 .next-button {
-	position: fixed;
 	top: -20;
 	right: 0;
 	background: green;
 }
 
-
-/*.carousel-nav-buttons {
+button {
+	background: black;
+}
+/*
+.carousel-nav-buttons {
 	position: fixed;
 	right: 0%;
 	top: 0;
 }
-*/
+
 
 
 .carousel-nav-buttons button {
@@ -96,7 +92,7 @@ button img {
 	width: 100%;
 }
 
-
+*/
 
 
 .carouselOverall {
