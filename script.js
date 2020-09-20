@@ -31,7 +31,7 @@ Vue.component ('the-carousel', {
 		return {carousel: []}
 	},
 	
-	/*import myButtonFunction from "myButtonFunction.js";*/
+	/*import myButtonFunction from "myButtonFunction.js";
 	methods: {
 		nextButton: function() {
 			const first = this.carousel.shift() this.carousel = this.carousel.concat(first)
@@ -41,6 +41,7 @@ Vue.component ('the-carousel', {
 		}
 		
 	}
+	*/
 });
 
 var carouselCell = new Vue ({
