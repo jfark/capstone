@@ -31,11 +31,13 @@ Vue.component ('the-carousel', {
 		return {carousel: []}
 	},
 	
-	import myButtonFunction from "myButtonFunction.js";
+	/*import myButtonFunction from "myButtonFunction.js";
 	methods: {
-		myButtonFunction
+		nextButton: function() {
+			this.headerMessage = this.headerMessage.split('').reverse().join('')
+		}
 		
-	}
+	}*/
 });
 
 var carouselCell = new Vue ({
@@ -48,7 +50,7 @@ var carouselCell = new Vue ({
 			},
 			{
 				title: "Second",
-				image: 'images/14.jpg',
+				image: 'images/33.jpg',
 			},
 			{
 				title: "Third",
