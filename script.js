@@ -1,201 +1,140 @@
-/*--------Code from JF Portfolio-------*/
-
-/* for ref from HTML
-			<div class="carouselOverall">
-				<div class="carouselCell" v-cloak>
-					<div is="the-carousel" 
-					v-for="cell in carousel"
-					v-bind:project="cell">
-					</div>
-				</div>
-			</div>
-
-*/
-
-
-Vue.component ('the-carousel', {
-	props: ['cell'],
+Vue.component('the-portfolio', {
+	props: ['project'],
 	template: `
-		<div class="carouselNode">
-			<div class="carousel">
-				<div class="carousel__cell">
+		<div>
+			<div><p>{{project.title}}</p></div>
+			<div class="carousel-nav-buttons">
+				<button class="previous-button" v-on:click="previous">Previous Slide</button>
+				<button class="next-button" v-on:click="next">Next Slide</button>
+			</div>
+			<div class="carousel" ref="carousel">
+				<div v-for="room in project.rooms" class="carousel__cell">
 					<div class="carousel_title">
-						<p>{{cell.title}}</p>
+						<span class="highlight">{{room.title}}</span>
 					</div>
-					<div><img v-bind:src="cell.image" alt="title"/></div>
+					<img v-bind:src="room.image" alt="title"/>	
 				</div>
 			</div>
-		</div>`,
-			
+		</div>
+		`,
 	data: function() {
-		return {carousel: []}
-	},
-	
-	/*import myButtonFunction from "myButtonFunction.js";
-	methods: {
-		nextButton: function() {
-			const first = this.carousel.shift() this.carousel = this.carousel.concat(first)
-		},
-		previousButton: function() {
-			const last = this.carousel.pop() this.carousel = [last].concat(this.carousel)
+		return {
+			selectedIndex: 0
 		}
-		
+	},
+	methods: {
+		rotateCarousel: function() {
+			var cellCount = this.project.rooms.length;
+			var cellRange = 8;
+			var theta = 360 / cellRange;
+			var cellSize = this.$refs.carousel.offsetWidth/cellCount;
+			var radius = Math.round( ( cellSize / 2) / Math.tan( Math.PI / cellRange ) );
+			var angle = theta * this.selectedIndex * -1;
+			this.$refs.carousel.style.transform = 'translateZ(' + -radius + 'px) ' +
+				'rotateY' + '(' + angle + 'deg)';
+		},
+		next: function() {
+			this.selectedIndex++;
+			this.rotateCarousel();
+		},
+		previous: function() {
+			this.selectedIndex--;
+			this.rotateCarousel();
+		}
 	}
-	*/
 });
 
-var carouselCell = new Vue ({
-	el: ".carouselOverall",
+var projectOne = new Vue ({
+	el: ".projectOne",
 	data: {
-		carousel: [
-			{
-				title: "First",
-				image: 'images/14.jpg',
-				id: '1',
-			},
-			{
-				title: "Second",
-				image: 'images/33.jpg',
-				id: '2',
-			},
-			{
-				title: "Third",
-				image: 'images/14.jpg',
-				id: '3',
-			},
-			{
-				title: "Fourth",
-				image: 'images/14.jpg',
-				id: '4',
-			},
-			{
-				title: "Fifth",
-				image: 'images/14.jpg',
-				id: '5',
-			},
-			{
-				title: "Sixth",
-				image: 'images/14.jpg',
-				id: '6',
-			},
-			{
-				title: "Seventh",
-				image: 'images/14.jpg',
-				id: '7',
-			},
-			{
-				title: "Eighth",
-				image: 'images/14.jpg',
-				id: '8',
-			},
-			{
-				title: "Ninth",
-				image: 'images/14.jpg',
-				id: '9',
-			},
-		]
-	},
-	
+		project: {
+			title: 'Project 1',
+			rooms: [
+				{
+					title: "KEVIN Room",
+					image: './images/14.jpg',
+					caption: 'A "reader" system developed to showcase pairs of important literary voices, such as W.E.B. DuBois and James Baldwin. The design was conceived to highlight the differences and similarities in tone by prominently displaying the year published, and by revealing pull quotes in an interactive scrollable manner.',
+					link: "https://jfarkas.studio.mcad.edu/typography/readerforwebFinal/",
+				},
+				{
+					title: "Room 2",
+					image: 'images/14.jpg',
+					caption: 'A "reader" system developed to showcase pairs of important literary voices, such as W.E.B. DuBois and James Baldwin. The design was conceived to highlight the differences and similarities in tone by prominently displaying the year published, and by revealing pull quotes in an interactive scrollable manner.',
+					link: "https://jfarkas.studio.mcad.edu/typography/readerforwebFinal/",
+
+				},
+				{
+					title: "Room 3",
+					image: 'images/14.jpg',
+					caption: 'A "reader" system developed to showcase pairs of important literary voices, such as W.E.B. DuBois and James Baldwin. The design was conceived to highlight the differences and similarities in tone by prominently displaying the year published, and by revealing pull quotes in an interactive scrollable manner.',
+					link: "https://jfarkas.studio.mcad.edu/typography/readerforwebFinal/",
+
+				}
+			]
+		}
+	}
 });
 
-/*var portfolioProjects = new Vue ({
-	el: ".portfolioOverall2",
+var projectTwo = new Vue ({
+	el: ".projectTwo",
 	data: {
-		titleInput: "",
-		captionInput: "",
-		imageInput: "",
-		portfolio: [
-			{
-				title: "Room 2",
-				image: 'images/reader.png',
-				image2: 'images/33.jpg',
-				
-			},
-			
-		]
-	},
-	
+		project: {
+			title: 'Project 2',
+			rooms: [
+				{
+					title: "Room 1",
+					image: './images/33.jpg',
+					caption: 'A "reader" system developed to showcase pairs of important literary voices, such as W.E.B. DuBois and James Baldwin. The design was conceived to highlight the differences and similarities in tone by prominently displaying the year published, and by revealing pull quotes in an interactive scrollable manner.',
+					link: "https://jfarkas.studio.mcad.edu/typography/readerforwebFinal/",
+				},
+				{
+					title: "Room 2",
+					image: 'images/33.jpg',
+					caption: 'A "reader" system developed to showcase pairs of important literary voices, such as W.E.B. DuBois and James Baldwin. The design was conceived to highlight the differences and similarities in tone by prominently displaying the year published, and by revealing pull quotes in an interactive scrollable manner.',
+					link: "https://jfarkas.studio.mcad.edu/typography/readerforwebFinal/",
+
+				},
+				{
+					title: "Room 3",
+					image: 'images/33.jpg',
+					caption: 'A "reader" system developed to showcase pairs of important literary voices, such as W.E.B. DuBois and James Baldwin. The design was conceived to highlight the differences and similarities in tone by prominently displaying the year published, and by revealing pull quotes in an interactive scrollable manner.',
+					link: "https://jfarkas.studio.mcad.edu/typography/readerforwebFinal/",
+
+				}
+			]
+		}
+	}
 });
 
-var portfolioProjects = new Vue ({
-	el: ".portfolioOverall3",
+var projectThree = new Vue ({
+	el: ".projectThree",
 	data: {
-		titleInput: "",
-		captionInput: "",
-		imageInput: "",
-		portfolio: [
-			{
-				title: "Room 3",
-				image: 'images/reader.png',
-				image3: 'images/14.jpg',
-				caption: 'A "reader" system developed to showcase pairs of important literary voices, such as W.E.B. DuBois and James Baldwin. The design was conceived to highlight the differences and similarities in tone by prominently displaying the year published, and by revealing pull quotes in an interactive scrollable manner.',
-				link: "https://jfarkas.studio.mcad.edu/typography/readerforwebFinal/",
-				
-			},
-			
-		]
-	},
-	
-});
+		project: {
+			title: 'Project 3',
+			rooms: [
+				{
+					title: "Room 1",
+					image: './images/60.jpg',
+					caption: 'A "reader" system developed to showcase pairs of important literary voices, such as W.E.B. DuBois and James Baldwin. The design was conceived to highlight the differences and similarities in tone by prominently displaying the year published, and by revealing pull quotes in an interactive scrollable manner.',
+					link: "https://jfarkas.studio.mcad.edu/typography/readerforwebFinal/",
+				},
+				{
+					title: "Room 2",
+					image: 'images/60.jpg',
+					caption: 'A "reader" system developed to showcase pairs of important literary voices, such as W.E.B. DuBois and James Baldwin. The design was conceived to highlight the differences and similarities in tone by prominently displaying the year published, and by revealing pull quotes in an interactive scrollable manner.',
+					link: "https://jfarkas.studio.mcad.edu/typography/readerforwebFinal/",
 
-var portfolioProjects = new Vue ({
-	el: ".portfolioOverall4",
-	data: {
-		titleInput: "",
-		captionInput: "",
-		imageInput: "",
-		portfolio: [
-			{
-				title: "Room 4",
-				image: 'images/reader.png',
-				caption: 'A "reader" system developed to showcase pairs of important literary voices, such as W.E.B. DuBois and James Baldwin. The design was conceived to highlight the differences and similarities in tone by prominently displaying the year published, and by revealing pull quotes in an interactive scrollable manner.',
-				link: "https://jfarkas.studio.mcad.edu/typography/readerforwebFinal/",
-				
-			},
-			
-		]
-	},
-	
-});
+				},
+				{
+					title: "Room 3",
+					image: 'images/60.jpg',
+					caption: 'A "reader" system developed to showcase pairs of important literary voices, such as W.E.B. DuBois and James Baldwin. The design was conceived to highlight the differences and similarities in tone by prominently displaying the year published, and by revealing pull quotes in an interactive scrollable manner.',
+					link: "https://jfarkas.studio.mcad.edu/typography/readerforwebFinal/",
 
-var portfolioProjects = new Vue ({
-	el: ".portfolioOverall5",
-	data: {
-		titleInput: "",
-		captionInput: "",
-		imageInput: "",
-		portfolio: [
-			{
-				title: "Room 5",
-				image: 'images/reader.png',
-				caption: 'A "reader" system developed to showcase pairs of important literary voices, such as W.E.B. DuBois and James Baldwin. The design was conceived to highlight the differences and similarities in tone by prominently displaying the year published, and by revealing pull quotes in an interactive scrollable manner.',
-				link: "https://jfarkas.studio.mcad.edu/typography/readerforwebFinal/",
-				
-			},
-			
-		]
-	},
-	
-});
-
-var portfolioProjects = new Vue ({
-	el: ".portfolioOverall6",
-	data: {
-		titleInput: "",
-		captionInput: "",
-		imageInput: "",
-		portfolio: [
-			{
-				title: "Room 6",
-				image: 'images/reader.png',
-				caption: 'A "reader" system developed to showcase pairs of important literary voices, such as W.E.B. DuBois and James Baldwin. The design was conceived to highlight the differences and similarities in tone by prominently displaying the year published, and by revealing pull quotes in an interactive scrollable manner.',
-				link: "https://jfarkas.studio.mcad.edu/typography/readerforwebFinal/",
-				
-			},
-			
-		]
-	},
-	
+				}
+			]
+		}
+	}
 });
 
 
