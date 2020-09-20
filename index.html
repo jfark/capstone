@@ -22,14 +22,15 @@
 				<div class="carouselCell" v-cloak>
 					<div is="the-carousel" 
 					v-for="cell in carousel"
-					v-bind:cell="cell">
+					v-bind:cell="cell"
+					v-bind:key="cell.id">
 					</div>
 				</div>
 				
 				<div class="carousel-options">
 					<div class="carousel-nav-buttons">
-					    <button class="next-button" >Next Slide</button>
-						<button class="previous-button" >Previous Slide</button>
+					    <button class="next-button" v-on:click="nextButton">Next Slide</button>
+						<button class="previous-button" v-on:click="previousButton">Previous Slide</button>
 					</div>
 				</div>
 					

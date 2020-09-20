@@ -31,13 +31,16 @@ Vue.component ('the-carousel', {
 		return {carousel: []}
 	},
 	
-	/*import myButtonFunction from "myButtonFunction.js";
+	/*import myButtonFunction from "myButtonFunction.js";*/
 	methods: {
 		nextButton: function() {
-			this.headerMessage = this.headerMessage.split('').reverse().join('')
+			const first = this.carousel.shift() this.carousel = this.carousel.concat(first)
+		},
+		previousButton: function() {
+			const last = this.carousel.pop() this.carousel = [last].concat(this.carousel)
 		}
 		
-	}*/
+	}
 });
 
 var carouselCell = new Vue ({
@@ -47,38 +50,47 @@ var carouselCell = new Vue ({
 			{
 				title: "First",
 				image: 'images/14.jpg',
+				id: '1',
 			},
 			{
 				title: "Second",
 				image: 'images/33.jpg',
+				id: '2',
 			},
 			{
 				title: "Third",
 				image: 'images/14.jpg',
+				id: '3',
 			},
 			{
 				title: "Fourth",
 				image: 'images/14.jpg',
+				id: '4',
 			},
 			{
 				title: "Fifth",
 				image: 'images/14.jpg',
+				id: '5',
 			},
 			{
 				title: "Sixth",
 				image: 'images/14.jpg',
+				id: '6',
 			},
 			{
 				title: "Seventh",
 				image: 'images/14.jpg',
+				id: '7',
 			},
 			{
 				title: "Eighth",
 				image: 'images/14.jpg',
+				id: '8',
 			},
 			{
 				title: "Ninth",
 				image: 'images/14.jpg',
+				id: '9',
 			},
 		]
 	},

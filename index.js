@@ -1,3 +1,5 @@
+//Carousel button shift script
+
 var carousel = document.querySelector('.carouselCell');
 var cells = carousel.querySelectorAll('.carouselNode');
 var cellCount; // cellCount set from cells-range input value
@@ -8,25 +10,26 @@ var isHorizontal = true;
 var rotateFn = isHorizontal ? 'rotateY' : 'rotateX';
 var radius, theta;
 
-var prevButton = document.querySelector('.previous-button');
-prevButton.addEventListener( 'click', function() {
+function prevButton() {
   console.log("Hello world!");
   selectedIndex--;
   rotateCarousel();
-});
+};
 
-var nextButton = document.querySelector('.next-button');
-nextButton.addEventListener( 'click', function() {
+function nextButton() {
   console.log("Hello world!");
   selectedIndex++;
   rotateCarousel();
-});
+};
 
 function rotateCarousel() {
   var angle = theta * selectedIndex * -1;
   carousel.style.transform = 'translateZ(' + -radius + 'px) ' + 
     rotateFn + '(' + angle + 'deg)';
-}
+};
+
+//begin z-space Script
+
 
 let films = [];
 
