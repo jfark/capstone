@@ -51,21 +51,61 @@ var projectOne = new Vue ({
 			title: 'Project 1',
 			rooms: [
 				{
-					title: "KEVIN Room",
-					image: './images/14.jpg',
+					title: "Main Room, West Wall",
+					image: './images/main-room-west-wall/main-room-west-wall.jpg',
 					caption: 'A "reader" system developed to showcase pairs of important literary voices, such as W.E.B. DuBois and James Baldwin. The design was conceived to highlight the differences and similarities in tone by prominently displaying the year published, and by revealing pull quotes in an interactive scrollable manner.',
 					link: "https://jfarkas.studio.mcad.edu/typography/readerforwebFinal/",
 				},
 				{
-					title: "Room 2",
-					image: 'images/14.jpg',
+					title: "Georges Seurat; Models (Poseuses); 1886–1888.",
+					image: 'images/main-room-west-wall/BF811.jpg',
 					caption: 'A "reader" system developed to showcase pairs of important literary voices, such as W.E.B. DuBois and James Baldwin. The design was conceived to highlight the differences and similarities in tone by prominently displaying the year published, and by revealing pull quotes in an interactive scrollable manner.',
 					link: "https://jfarkas.studio.mcad.edu/typography/readerforwebFinal/",
 
 				},
 				{
-					title: "Room 3",
-					image: 'images/14.jpg',
+					title: "Paul Cézanne; The Card Players (Les Joueurs de cartes); 1890–1892.",
+					image: 'images/main-room-west-wall/BF564.jpg',
+					caption: 'A "reader" system developed to showcase pairs of important literary voices, such as W.E.B. DuBois and James Baldwin. The design was conceived to highlight the differences and similarities in tone by prominently displaying the year published, and by revealing pull quotes in an interactive scrollable manner.',
+					link: "https://jfarkas.studio.mcad.edu/typography/readerforwebFinal/",
+
+				},
+				{
+					title: "Main Room, West Wall",
+					image: './images/main-room-west-wall/main-room-west-wall.jpg',
+					caption: 'A "reader" system developed to showcase pairs of important literary voices, such as W.E.B. DuBois and James Baldwin. The design was conceived to highlight the differences and similarities in tone by prominently displaying the year published, and by revealing pull quotes in an interactive scrollable manner.',
+					link: "https://jfarkas.studio.mcad.edu/typography/readerforwebFinal/",
+				},
+				{
+					title: "Georges Seurat; Models (Poseuses); 1886–1888.",
+					image: 'images/main-room-west-wall/BF811.jpg',
+					caption: 'A "reader" system developed to showcase pairs of important literary voices, such as W.E.B. DuBois and James Baldwin. The design was conceived to highlight the differences and similarities in tone by prominently displaying the year published, and by revealing pull quotes in an interactive scrollable manner.',
+					link: "https://jfarkas.studio.mcad.edu/typography/readerforwebFinal/",
+
+				},
+				{
+					title: "Paul Cézanne; The Card Players (Les Joueurs de cartes); 1890–1892.",
+					image: 'images/main-room-west-wall/BF564.jpg',
+					caption: 'A "reader" system developed to showcase pairs of important literary voices, such as W.E.B. DuBois and James Baldwin. The design was conceived to highlight the differences and similarities in tone by prominently displaying the year published, and by revealing pull quotes in an interactive scrollable manner.',
+					link: "https://jfarkas.studio.mcad.edu/typography/readerforwebFinal/",
+
+				},
+				{
+					title: "Main Room, West Wall",
+					image: './images/main-room-west-wall/main-room-west-wall.jpg',
+					caption: 'A "reader" system developed to showcase pairs of important literary voices, such as W.E.B. DuBois and James Baldwin. The design was conceived to highlight the differences and similarities in tone by prominently displaying the year published, and by revealing pull quotes in an interactive scrollable manner.',
+					link: "https://jfarkas.studio.mcad.edu/typography/readerforwebFinal/",
+				},
+				{
+					title: "Georges Seurat; Models (Poseuses); 1886–1888.",
+					image: 'images/main-room-west-wall/BF811.jpg',
+					caption: 'A "reader" system developed to showcase pairs of important literary voices, such as W.E.B. DuBois and James Baldwin. The design was conceived to highlight the differences and similarities in tone by prominently displaying the year published, and by revealing pull quotes in an interactive scrollable manner.',
+					link: "https://jfarkas.studio.mcad.edu/typography/readerforwebFinal/",
+
+				},
+				{
+					title: "Paul Cézanne; The Card Players (Les Joueurs de cartes); 1890–1892.",
+					image: 'images/main-room-west-wall/BF564.jpg',
 					caption: 'A "reader" system developed to showcase pairs of important literary voices, such as W.E.B. DuBois and James Baldwin. The design was conceived to highlight the differences and similarities in tone by prominently displaying the year published, and by revealing pull quotes in an interactive scrollable manner.',
 					link: "https://jfarkas.studio.mcad.edu/typography/readerforwebFinal/",
 

@@ -20,6 +20,8 @@ document.addEventListener("DOMContentLoaded", function() {
       setSceneHeight();
 });
 
+
+
 function moveCamera() {
   document.documentElement.style.setProperty("--cameraZ", window.pageYOffset);
 }
