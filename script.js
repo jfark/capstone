@@ -22,7 +22,13 @@ Vue.component ('the-carousel', {
 					</div
 					<div><img v-bind:src="cell.image" alt="title"/></div>
 				</div>
-			</div
+			</div>
+			<div class="carousel-options">
+				<div class="carousel-nav-buttons">
+				    <button class="previous-button">previous</button>
+				    <button class="next-button">next</button>
+				</div>
+			</div>
 		</div>`,
 			
 	data: function() {
@@ -40,39 +46,39 @@ var carouselCell = new Vue ({
 	data: {
 		carousel: [
 			{
-				title: "Room 1",
+				title: "First",
 				image: 'images/14.jpg',
 			},
 			{
-				title: "Room 1",
+				title: "Second",
 				image: 'images/14.jpg',
 			},
 			{
-				title: "Room 1",
+				title: "Third",
 				image: 'images/14.jpg',
 			},
 			{
-				title: "Room 1",
+				title: "Fourth",
 				image: 'images/14.jpg',
 			},
 			{
-				title: "Room 1",
+				title: "Fifth",
 				image: 'images/14.jpg',
 			},
 			{
-				title: "Room 1",
+				title: "Sixth",
 				image: 'images/14.jpg',
 			},
 			{
-				title: "Room 1",
+				title: "Seventh",
 				image: 'images/14.jpg',
 			},
 			{
-				title: "Room 1",
+				title: "Eighth",
 				image: 'images/14.jpg',
 			},
 			{
-				title: "Room 1",
+				title: "Ninth",
 				image: 'images/14.jpg',
 			},
 		]

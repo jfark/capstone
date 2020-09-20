@@ -53,7 +53,7 @@ li {
 }
 
 
-
+*/
 
 button {
 	background: black;
@@ -75,11 +75,12 @@ button {
 }
 
 
-.carousel-nav-buttons {
+/*.carousel-nav-buttons {
 	position: fixed;
 	right: 0%;
 	top: 0;
 }
+*/
 
 
 .carousel-nav-buttons button {
@@ -96,7 +97,7 @@ button img {
 }
 
 
-*/
+
 
 .carouselOverall {
 	margin: 0 20%;
@@ -132,7 +133,7 @@ button img {
 	font-size: 2.5em;
 	letter-spacing: .3em;
 	text-align: center;
-	color: #f1ebb2;
+	color: black;
 }
 
 .carousel_title {
@@ -140,12 +141,7 @@ button img {
 	left: -6%;
 	bottom: -45%;
 	padding: 14%;
-	color: #3f5b44;
 	font-size: 1em;
-	line-height: 1.3em;
-	transform-origin: 0 0;
-	transform: rotate(-90deg);
-	
 }
 
 .highlight {
@@ -158,12 +154,13 @@ button img {
 	max-width: 60%;
 }
 
-.carousel-options {
+/*.carousel-options {
 	position: fixed;
 	bottom: 0;
 	right: 0;
 	margin: 3%;
 }
+*/
 
 label {
 	font-family: 'Pangram-Black', sans-serif;
