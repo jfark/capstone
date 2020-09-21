@@ -13,6 +13,7 @@ body {
 main {
     display: flex;
     flex-direction: column;
+	background-color: rgba(255, 248, 231, 1.00);
 }
 
 .first-scene {
@@ -122,6 +123,7 @@ h2 {
 	background-color: orange;
 }
 
+
 .carousel__cell {
     position: absolute;
     width: 440px;
@@ -143,18 +145,30 @@ h2 {
     color: #f1ebb2;
 }
 
+.title_feature {
+	position: relative;
+}
+
 .carousel_title {
     position: absolute;
     top: 0%;
     bottom: -45%;
     padding: 14%;
-    color: #3f5b44;
+    color: red;
     font-size: 1em;
     line-height: 1.3em;
     /*transform-origin: 0 0;
     transform: rotate(-90deg);*/
-
+	
 }
+
+.carousel_title:hover {
+	display: none;
+}
+
+/*.title_feature:hover .carousel_title {
+	display: none;
+}*/
 
 .highlight {
     background-color: ;
@@ -165,6 +179,7 @@ h2 {
 .carousel img {
     max-width: 80%;
 }
+
 
 .carousel-options {
     position: fixed;
