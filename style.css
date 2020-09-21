@@ -118,6 +118,10 @@ button img {
     transition: transform 1s;
 }
 
+h2 {
+	background-color: orange;
+}
+
 .carousel__cell {
     position: absolute;
     width: 440px;
@@ -128,6 +132,8 @@ button img {
     color: white;
     text-align: center;
     font-family: 'Pangram-Regular', sans-serif;
+	background: rgba(255, 255, 255, 0);
+	/*border-top: 5px solid rgba(247, 92, 16, 1.00);*/
 }
 
 .carousel__cell p {
@@ -139,14 +145,14 @@ button img {
 
 .carousel_title {
     position: absolute;
-    left: -6%;
+    top: 0%;
     bottom: -45%;
     padding: 14%;
     color: #3f5b44;
     font-size: 1em;
     line-height: 1.3em;
-    transform-origin: 0 0;
-    transform: rotate(-90deg);
+    /*transform-origin: 0 0;
+    transform: rotate(-90deg);*/
 
 }
 
@@ -157,7 +163,7 @@ button img {
 }
 
 .carousel img {
-    max-width: 60%;
+    max-width: 80%;
 }
 
 .carousel-options {
@@ -185,7 +191,7 @@ label {
 .cells-range {
     display: none;
 }
-
+/*
 .carousel__cell:nth-child(9n+1) {
     background: hsla(3, 97%, 61%, 1);
     border: 10px solid #fc443b;
@@ -222,6 +228,7 @@ label {
     background: hsla(54, 69%, 82%,.95);
     border: 10px solid #3f5b44;
 }
+*/
 
 .carousel__cell:nth-child(1) { transform: rotateY(  0deg) translateZ(769px); }
 .carousel__cell:nth-child(2) { transform: rotateY( 40deg) translateZ(769px); }
@@ -478,6 +485,7 @@ h1 .logo {
     font-size: 1.5rem;
 }
 
+/*
 .scene3D > div:nth-child(0) {
     background-color: #ffc2e0;
 }
