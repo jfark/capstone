@@ -1,3 +1,4 @@
+/*
 var carousel = document.querySelector('.carouselCell');
 var cells = carousel.querySelectorAll('.carouselNode');
 var cellCount; // cellCount set from cells-range input value
@@ -27,6 +28,7 @@ function rotateCarousel() {
   carousel.style.transform = 'translateZ(' + -radius + 'px) ' + 
     rotateFn + '(' + angle + 'deg)';
 }
+*/
 
 
 

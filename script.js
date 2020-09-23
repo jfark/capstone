@@ -16,6 +16,10 @@
 Vue.component ('the-carousel', {
 	props: ['cell'],
 	template: `
+		<div class="carousel-nav-buttons">
+			<button class="previous-button" v-on:click="previous">Previous Slide</button>
+			<button class="next-button" v-on:click="next">Next Slide</button>
+		</div>
 		<div class="carouselNode">
 			<div class="carousel">
 				<div class="carousel__cell">
@@ -28,42 +32,38 @@ Vue.component ('the-carousel', {
 		</div>`,
 			
 	data: function() {
-		return {carousel: []}
+		return {carousel: []},
+		return {selectedIndex: 0}
 	},
 	methods: {
 		rotateCarousel: function(){
-			var carousel = document.querySelector('.carouselCell');
-			var cells = carousel.querySelectorAll('.carouselNode');
-			var cellCount; // cellCount set from cells-range input value
-			var selectedIndex = 0;
+			//var carousel = document.querySelector('.carouselCell');
+			//var cells = carousel.querySelectorAll('.carouselNode');
+			//var cellCount; cellCount set from cells-range input value
+			var cells = this.carousel.length
+			//var selectedIndex = 0;
 			var cellWidth = this.carousel.offsetWidth;
 			var cellHeight = this.carousel.offsetHeight;
-			var isHorizontal = true;
-			var rotateFn = isHorizontal ? 'rotateY' : 'rotateX';
 			var radius, theta;
 			var angle = theta * selectedIndex * -1;
-			this.carousel.style.transform = 'translateZ(' + -radius + 'px) ' + 
-		    rotateFn + '(' + angle + 'deg)';
+			this.$refs.carousel.style.transform = 'translateZ(' + -radius + 'px) ' + 
+		    rotateY + '(' + angle + 'deg)';
+		},
+		previous: function(){
+			this.selectedIndex--;
+			this.rotateCarousel();
+		},
+		next: function(){
+			console.log("Hello world!");
+			this.selectedIndex++;
+			this.rotateCarousel();
+		}
 
-			var prevButton = document.querySelector('.previous-button');
-			prevButton.addEventListener( 'click', function() {
-			  console.log("Hello world!");
-			  selectedIndex--;
-			  rotateCarousel();
-			});
-
-			var nextButton = document.querySelector('.next-button');
-			nextButton.addEventListener( 'click', function() {
-			  console.log("Hello world!");
-			  selectedIndex++;
-			  rotateCarousel();
-			});
-
-			function rotateCarousel() {
+			/*function rotateCarousel() {
 			  var angle = theta * selectedIndex * -1;
 			  carousel.style.transform = 'translateZ(' + -radius + 'px) ' + 
 			    rotateFn + '(' + angle + 'deg)';
-			}
+			}*/
 		}
 	}
 	
