@@ -28,6 +28,8 @@ function rotateCarousel() {
     rotateFn + '(' + angle + 'deg)';
 }
 
+
+
 let films = [];
 
 const perspectiveOrigin = {

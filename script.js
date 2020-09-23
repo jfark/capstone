@@ -30,6 +30,42 @@ Vue.component ('the-carousel', {
 	data: function() {
 		return {carousel: []}
 	},
+	methods: {
+		rotateCarousel: function(){
+			var carousel = document.querySelector('.carouselCell');
+			var cells = carousel.querySelectorAll('.carouselNode');
+			var cellCount; // cellCount set from cells-range input value
+			var selectedIndex = 0;
+			var cellWidth = this.carousel.offsetWidth;
+			var cellHeight = this.carousel.offsetHeight;
+			var isHorizontal = true;
+			var rotateFn = isHorizontal ? 'rotateY' : 'rotateX';
+			var radius, theta;
+			var angle = theta * selectedIndex * -1;
+			this.carousel.style.transform = 'translateZ(' + -radius + 'px) ' + 
+		    rotateFn + '(' + angle + 'deg)';
+
+			var prevButton = document.querySelector('.previous-button');
+			prevButton.addEventListener( 'click', function() {
+			  console.log("Hello world!");
+			  selectedIndex--;
+			  rotateCarousel();
+			});
+
+			var nextButton = document.querySelector('.next-button');
+			nextButton.addEventListener( 'click', function() {
+			  console.log("Hello world!");
+			  selectedIndex++;
+			  rotateCarousel();
+			});
+
+			function rotateCarousel() {
+			  var angle = theta * selectedIndex * -1;
+			  carousel.style.transform = 'translateZ(' + -radius + 'px) ' + 
+			    rotateFn + '(' + angle + 'deg)';
+			}
+		}
+	}
 	
 	/*import myButtonFunction from "myButtonFunction.js";
 	methods: {
