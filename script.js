@@ -27,13 +27,13 @@ Vue.component('the-portfolio', {
 	methods: {
 		rotateCarousel: function() {
 			var cellCount = this.project.rooms.length;
-			var cellRange = 9;
+			//var cellRange = 9;
 			var theta = 360 / cellCount;
 			var cellSize = this.$refs.carousel.offsetWidth/cellCount;
 			var radius = Math.round( ( cellSize / 2) / Math.tan( Math.PI / cellCount ) );
 			var angle = theta * this.selectedIndex * -1;
 			this.$refs.carousel.style.transform = 'translateZ(' + -radius + 'px) ' +
-				'rotateX' + '(' + angle + 'deg)';
+				'rotateY' + '(' + angle + 'deg)';
 		},
 		next: function() {
 			this.selectedIndex++;
