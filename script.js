@@ -29,8 +29,8 @@ Vue.component('the-portfolio', {
 			var cellCount = this.project.rooms.length;
 			//var cellRange = 9;
 			var theta = 360 / cellCount;
-			var cellSize = this.$refs.carousel.offsetWidth/cellCount;
-			var radius = Math.round( ( cellSize / 2) / Math.tan( Math.PI / cellCount ) );
+			//var cellSize = this.$refs.carousel.offsetWidth/cellCount;
+			var radius = Math.round( (280) / Math.tan(20) );
 			var angle = theta * this.selectedIndex * -1;
 			this.$refs.carousel.style.transform = 'translateZ(' + -radius + 'px) ' +
 				'rotateY' + '(' + angle + 'deg)';

@@ -8,12 +8,14 @@ body {
     font-family: 'Pangram-Regular', sans-serif;
     background: url("");
     background-size: 100%;
+	background-color: rgba(255, 248, 231, 1.00);
+	background-color: orange;
 }
 
 main {
     display: flex;
     flex-direction: column;
-	background-color: rgba(255, 248, 231, 1.00);
+	
 }
 
 .first-scene {
@@ -61,11 +63,11 @@ li {
 }
 
 .scene {
-    margin: 0 20%;
+    /*margin: 0 20%;*/
     position: relative;
-    width: 470px;
-    height: 140px;
-    perspective: 2000px;
+    width: 550px;
+    height: 400px;
+    perspective: 1000px;
 }
 
 button {
@@ -110,14 +112,14 @@ button img {
 */
 
 .portfolioOverall {
-	background: red;
+	background-image: url("images/main-room-west-wall/main-room-west-wall.jpg");
 }
 
 .carousel {
     /*width: 100%;
     height: 100%;
     position: absolute;*/
-    transform: translateZ(-604px);
+    transform: translateZ(-769px);
     transform-style: preserve-3d;
     transition: transform 1s;
 }
@@ -129,7 +131,7 @@ h2 {
 
 .carousel__cell {
     position: absolute;
-    width: 440px;
+    width: 550px;
     height: 400px;
     left: 30px;
     top: 10px;
@@ -138,7 +140,9 @@ h2 {
     text-align: center;
     font-family: 'Pangram-Regular', sans-serif;
 	background: rgba(255, 255, 34, .9);
+	background-color: rgba(255, 248, 231, .85);
 	/*border-top: 5px solid rgba(247, 92, 16, 1.00);*/
+	transform-style: preserve-3d;
 }
 
 .carousel__cell p {
@@ -165,11 +169,11 @@ h2 {
 	
 }
 
-.carousel_title:hover {
+/*.carousel_title:hover {
 	display: none;
 }
 
-/*.title_feature:hover .carousel_title {
+.title_feature:hover .carousel_title {
 	display: none;
 }*/
 
@@ -248,23 +252,23 @@ label {
 }
 */
 
-.carousel__cell:nth-child(1) { transform: rotateY(  0deg) translateZ(604px); }
-.carousel__cell:nth-child(2) { transform: rotateY( 40deg) translateZ(604px); }
-.carousel__cell:nth-child(3) { transform: rotateY( 80deg) translateZ(604px); }
-.carousel__cell:nth-child(4) { transform: rotateY(120deg) translateZ(604px); }
-.carousel__cell:nth-child(5) { transform: rotateY(160deg) translateZ(604px); }
-.carousel__cell:nth-child(6) { transform: rotateY(200deg) translateZ(604px); }
-.carousel__cell:nth-child(7) { transform: rotateY(240deg) translateZ(604px); }
-.carousel__cell:nth-child(8) { transform: rotateY(280deg) translateZ(604px); }
-.carousel__cell:nth-child(9) { transform: rotateY(320deg) translateZ(604px); }
+.carousel__cell:nth-child(1) { transform: rotateY(  0deg) translateZ(769px); }
+.carousel__cell:nth-child(2) { transform: rotateY( 40deg) translateZ(769px); }
+.carousel__cell:nth-child(3) { transform: rotateY( 80deg) translateZ(769px); }
+.carousel__cell:nth-child(4) { transform: rotateY(120deg) translateZ(769px); }
+.carousel__cell:nth-child(5) { transform: rotateY(160deg) translateZ(769px); }
+.carousel__cell:nth-child(6) { transform: rotateY(200deg) translateZ(769px); }
+.carousel__cell:nth-child(7) { transform: rotateY(240deg) translateZ(769px); }
+.carousel__cell:nth-child(8) { transform: rotateY(280deg) translateZ(769px); }
+.carousel__cell:nth-child(9) { transform: rotateY(320deg) translateZ(769px); }
 
 /*--------Code from Vincent Humeau CSS 3D Demo-------*/
 
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display+SC:900");
 :root {
     --scenePerspective: 1;
-    --scenePerspectiveOriginX: 50;
-    --scenePerspectiveOriginY: 30;
+    --scenePerspectiveOriginX: 0;
+    --scenePerspectiveOriginY: 10;
     --itemZ: 2;
     --cameraSpeed: 150;
     --cameraZ: 0;
