@@ -33,7 +33,7 @@ Vue.component('the-portfolio', {
 			var radius = Math.round( ( cellSize / 2) / Math.tan( Math.PI / cellCount ) );
 			var angle = theta * this.selectedIndex * -1;
 			this.$refs.carousel.style.transform = 'translateZ(' + -radius + 'px) ' +
-				'rotateY' + '(' + angle + 'deg)';
+				'rotateX' + '(' + angle + 'deg)';
 		},
 		next: function() {
 			this.selectedIndex++;
