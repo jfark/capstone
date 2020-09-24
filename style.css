@@ -9,7 +9,7 @@ body {
     background: url("");
     background-size: 100%;
 	background-color: rgba(255, 248, 231, 1.00);
-	background-color: orange;
+	background-color: #fbeae1;
 }
 
 main {
@@ -70,6 +70,11 @@ li {
     perspective: 1000px;
 }
 
+.intro {
+	padding: 600px;
+	background: #ddc954;
+}
+
 button {
     background: black;
     width: 40%;
@@ -113,6 +118,7 @@ button img {
 
 .portfolioOverall {
 	background-image: url("images/main-room-west-wall/main-room-west-wall.jpg");
+	margin-top: 50%;
 }
 
 .carousel {
@@ -140,7 +146,7 @@ h2 {
     text-align: center;
     font-family: 'Pangram-Regular', sans-serif;
 	background: rgba(255, 255, 34, .9);
-	background-color: rgba(255, 248, 231, .85);
+	background-color: rgba(255, 248, 231, 0);
 	/*border-top: 5px solid rgba(247, 92, 16, 1.00);*/
 	transform-style: preserve-3d;
 }
@@ -267,8 +273,8 @@ label {
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display+SC:900");
 :root {
     --scenePerspective: 1;
-    --scenePerspectiveOriginX: 0;
-    --scenePerspectiveOriginY: 10;
+    --scenePerspectiveOriginX: 40;
+    --scenePerspectiveOriginY: -20;
     --itemZ: 2;
     --cameraSpeed: 150;
     --cameraZ: 0;
