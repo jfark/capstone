@@ -46,22 +46,25 @@ body {
 }
 
 .intro {
-	background: #ddc954;
-	border: 30px solid #ddc954;
+	background: #985587;
+	/*border: 30px solid #ddc954;*/
 	font-family: 'MiloSerifOT-Bold', serif;
 	position: relative;
+	text-align: center;
+	font-size: 2em;
+	color: white;
 }
 
 .intro img {
 	max-width: "80%";
 }
 
-.intro h3 {
+/*.intro h3 {
 	position: absolute;
 	top: 0;
 	left: 0;
 	font-family: 'MiloSerifOT-Bold', serif;
-}
+}*/
 
 button {
     width: 40%;
