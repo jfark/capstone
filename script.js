@@ -121,7 +121,7 @@ var projectTwo = new Vue ({
 	el: ".projectTwo",
 	data: {
 		project: {
-			title: 'Project 2',
+			title: 'Main Room, West Wall',
 			rooms: [
 				{
 					title: "Main Room, West Wall",
@@ -192,7 +192,7 @@ var projectThree = new Vue ({
 	el: ".projectThree",
 	data: {
 		project: {
-			title: 'Project 3',
+			title: 'Main Room, East Wall',
 			rooms: [
 				{
 					title: "Main Room, East Wall",

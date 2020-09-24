@@ -1,84 +1,68 @@
 <html>
-<head>
-    <meta charset="utf-8">
-    <title>Barnes Witz Webspace Proof of Concept</title>
-    <link type="text/css" rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="../Pangram-Regular.otf"/>
-    <link rel="stylesheet" href="../Pangram-Bold.otf"/>
-    <link rel="stylesheet" href="../Pangram-ExtraLight.otf"/>
-    <link rel="stylesheet" href="../Pangram-Black.otf"/>
-    <link rel="stylesheet" href="https://use.typekit.net/fnc3zlk.css">
+	<head>
+	    <meta charset="utf-8">
+	    <title>Barnes Witz Webspace Proof of Concept</title>
+	    <link type="text/css" rel="stylesheet" href="style.css">
+	    <link rel="stylesheet" href="fonts/Calibre-Medium.otf"/>
+	    <link rel="stylesheet" href="fonts/Calibre-Regular.otf"/>
+		<link rel="stylesheet" href="fonts/MiloSerifOT-Bold.otf"/>
+	    <!--<link rel="stylesheet" href="https://use.typekit.net/fnc3zlk.css">-->
+	</head>
 
-</head>
-
-<body>
-
-
-<main>
-
-    <!--Code from Vincent Humeau CSS 3D Demo-->
-    <div class="viewport">
-        <div class="scene3D-container">
-            <div class="scene3D">
+	<body>
+		<main>
+			
+		    <div class="viewport">
+		        <div class="scene3D-container">
+		            <div class="scene3D">
 				
-				<!--
-				<div>
-					<h3 class="intro">Main Room, North Wall</h3>
-				</div>
-					-->
-
-                <!--Code from JF Portfolio Vue-->
-                <div class="portfolioOverall" >
-                    <div class="projectOne" v-cloak>
-                        <div :project="project" is="the-portfolio"></div>
-                    </div>
-                </div>
+						<div class="intro">
+							<!--<img src="images/main-room-north-wall/main-room-north-wall.jpg">-->
+							<h3>Main Room, North Wall</h3>
+						</div>
+					
+		                <div class="portfolioOverall" >
+		                    <div class="projectOne" v-cloak>
+		                        <div :project="project" is="the-portfolio"></div>
+		                    </div>
+		                </div>
 				
-				<!--
-				<div>
-					<h3 class="intro">Main Room, West Wall</h3>
-				</div>
-					-->
+						<div class="intro">
+							<!--<img src="images/main-room-west-wall/main-room-west-wall-crop.jpg">-->
+							<h3>Main Room, West Wall</h3>
+						</div>
+					
+		                <div class="portfolioOverall" >
+		                    <div class="projectTwo" v-cloak>
+		                        <div :project="project" is="the-portfolio"></div>
+		                    </div>
+		                </div>
 				
-                <div class="portfolioOverall" >
-                    <div class="projectTwo" v-cloak>
-                        <div :project="project" is="the-portfolio"></div>
-                    </div>
-                </div>
+						<div class="intro">
+							<!--<img src="images/main-room-east-wall/main-room-east-wall-crop.jpg">-->
+							<h3>Main Room, East Wall</h3>
+						</div>
+					
+		                <div class="portfolioOverall" >
+		                    <div class="projectThree" v-cloak>
+		                        <div :project="project" is="the-portfolio"></div>
+		                    </div>
+		                </div>
 				
-				<!--
-				<div>
-					<h3 class="intro">Main Room, East Wall</h3>
-				</div>
-					-->
-				
-                <div class="portfolioOverall" >
-                    <div class="projectThree" v-cloak>
-                        <div :project="project" is="the-portfolio"></div>
-                    </div>
-                </div>
-				
-                <!--End Code from JF Portfolio Vue-->
-            </div>
-        </div>
-    </div>
+		            </div>
+		        </div>
+		    </div>
 
+		</main>
 
-    <footer>
-
-    </footer>
-
-</main>
-
-
-<script src="https://cdn.jsdelivr.net/npm/vue"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-<script src="script.js"></script>
-<!--<script src="script2.js"></script>-->
-<!--Code from Vincent Humeau CSS 3D Demo-->
-<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-<script src="index.js"></script>
-<!--End Code from Vincent Humeau CSS 3D Demo-->
-</body>
+	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	<script src="script.js"></script>
+	<!--<script src="script2.js"></script>-->
+	<!--Code from Vincent Humeau CSS 3D Demo-->
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<script src="index.js"></script>
+	<!--End Code from Vincent Humeau CSS 3D Demo-->
+	</body>
 
 </html>

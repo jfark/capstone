@@ -1,66 +1,41 @@
 * { box-sizing: border-box; }
 
+@font-face {
+  font-family: Calibre-Medium;
+  src: url(fonts/Calibre-Medium.otf);
+}
+
+@font-face {
+  font-family: MiloSerifOT-Bold;
+  src: url(fonts/MiloSerifOT-Bold.otf);
+}
+
 html {
-    font-family: 'Pangram-Regular', sans-serif;
+    font-family: 'Calibre-Medium', sans-serif;
+	font-family: 'MiloSerifOT-Bold', serif;
 }
 
 body {
-    font-family: 'Pangram-Regular', sans-serif;
+    font-family: 'Calibre-Regular', sans-serif;
     background: url("");
     background-size: 100%;
 	background-color: rgba(255, 248, 231, 1.00);
 	background-color: #fbeae1;
 }
 
-main {
+/*main {
     display: flex;
     flex-direction: column;
-	
 }
 
 .first-scene {
     display: flex;
 }
 
-.nav {
-    flex: 3;
-    align-items: right;
-    margin-top: 8%;
-}
-
-.logo2 {
-    flex: .5;
-    align-items: center;
-    padding: 2%;
-}
-
-.logo2 img {
-    max-width: 50%;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-li {
-    font-family: 'Pangram-Black', sans-serif;
-    font-weight: normal;
-    font-size: .7em;
-    padding: 0;
-    margin: 0 3%;
-    display: inline;
-    letter-spacing: .2em;
-    text-transform: uppercase;
-    color: #3f5b44;
-}
-
-
 .second-scene {
     padding: 0 20%;
     align-items: center;
-}
+}*/
 
 .scene {
     /*margin: 0 20%;*/
@@ -71,27 +46,45 @@ li {
 }
 
 .intro {
-	padding: 600px;
 	background: #ddc954;
+	border: 30px solid #ddc954;
+	font-family: 'MiloSerifOT-Bold', serif;
+	position: relative;
+}
+
+.intro img {
+	max-width: "80%";
+}
+
+.intro h3 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	font-family: 'MiloSerifOT-Bold', serif;
 }
 
 button {
-    background: black;
     width: 40%;
+	padding: 10px;
+	text-align: center;
+	border: none;
 }
 
 .previous-button {
-    position: fixed;
+    font-family: 'Calibre-Medium', sans-serif;
+	position: fixed;
     top: -20px;
     left: 0;
-    background: yellow;
+    background: black;
+	color: white;
 }
 
 .next-button {
-    position: fixed;
+    font-family: 'Calibre-Medium', sans-serif;
+	position: fixed;
     top: -20;
     right: 0;
-    background: green;
+    background: #d55c26;
 }
 
 /*
@@ -117,8 +110,8 @@ button img {
 */
 
 .portfolioOverall {
-	background-image: url("images/main-room-west-wall/main-room-west-wall.jpg");
-	margin-top: 50%;
+	margin-top: 10%;
+	background: white;
 }
 
 .carousel {
@@ -131,7 +124,7 @@ button img {
 }
 
 h2 {
-	background-color: orange;
+	font-family: 'MiloSerifOT-Bold', serif;
 }
 
 
@@ -144,7 +137,7 @@ h2 {
     line-height: 116px;
     color: white;
     text-align: center;
-    font-family: 'Pangram-Regular', sans-serif;
+    font-family: 'Calibre-Medium', sans-serif;
 	background: rgba(255, 255, 34, .9);
 	background-color: rgba(255, 248, 231, 0);
 	/*border-top: 5px solid rgba(247, 92, 16, 1.00);*/
@@ -172,6 +165,7 @@ h2 {
     line-height: 1.3em;
     /*transform-origin: 0 0;
     transform: rotate(-90deg);*/
+	display: none;
 	
 }
 
@@ -185,7 +179,7 @@ h2 {
 
 .highlight {
     background-color: ;
-    font-family: 'Pangram-Bold', sans-serif;
+    font-family: 'Calibre-Regular', sans-serif;
 
 }
 
@@ -202,7 +196,7 @@ h2 {
 }
 
 label {
-    font-family: 'Pangram-Black', sans-serif;
+    font-family: 'Calibre-Regular', sans-serif;
     font-weight: normal;
     font-size: .7em;
     padding: 0;
@@ -274,7 +268,7 @@ label {
 :root {
     --scenePerspective: 1;
     --scenePerspectiveOriginX: 40;
-    --scenePerspectiveOriginY: -20;
+    --scenePerspectiveOriginY: 0;
     --itemZ: 2;
     --cameraSpeed: 150;
     --cameraZ: 0;
@@ -318,6 +312,7 @@ label {
     width: 100%;
     top: 40%;
 }
+
 
 @media only screen and (min-width: 600px) {
     .viewport .scene3D-container .scene3D > div {
@@ -480,7 +475,7 @@ body {
 */
 
 h1 {
-    font-family: sans-serif;
+    font-family: 'Calibre-Medium', sans-serif;
     font-size: 1.5rem;
     color: white;
     margin: 0;
@@ -513,8 +508,9 @@ h1 .logo {
 
 .scene3D > div h2 {
     margin-top: 0;
-    font-family: "Playfair Display SC", serif;
+    font-family: 'MiloSerifOT-Bold', serif;
     font-size: 1.5rem;
+	text-align: center;
 }
 
 /*
