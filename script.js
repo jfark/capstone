@@ -17,8 +17,8 @@ Vue.component ('the-carousel', {
 	props: ['cell'],
 	template: `
 		<div class="carousel-nav-buttons">
-			<button class="previous-button" v-on:click="previous">Previous Slide</button>
-			<button class="next-button" v-on:click="next">Next Slide</button>
+			<button">Previous Slide</button>
+			<button>Next Slide</button>
 		</div>
 		<div class="carouselNode">
 			<div class="carousel">
@@ -32,10 +32,10 @@ Vue.component ('the-carousel', {
 		</div>`,
 			
 	data: function() {
-		return {carousel: []},
-		return {selectedIndex: 0}
-	},
-	methods: {
+		return {carousel: []}
+		//return {selectedIndex: 0}
+	}
+	/*methods: {
 		rotateCarousel: function(){
 			//var carousel = document.querySelector('.carouselCell');
 			//var cells = carousel.querySelectorAll('.carouselNode');
@@ -63,17 +63,10 @@ Vue.component ('the-carousel', {
 			  var angle = theta * selectedIndex * -1;
 			  carousel.style.transform = 'translateZ(' + -radius + 'px) ' + 
 			    rotateFn + '(' + angle + 'deg)';
-			}*/
+			}
 		}
 	}
-	
-	/*import myButtonFunction from "myButtonFunction.js";
-	methods: {
-		nextButton: function() {
-			this.headerMessage = this.headerMessage.split('').reverse().join('')
-		}
-		
-	}*/
+	*/
 });
 
 var carouselCell = new Vue ({
