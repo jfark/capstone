@@ -28,12 +28,12 @@ Vue.component('the-portfolio', {
 		rotateCarousel: function() {
 			
 			
-			var cellCount = 9;
+			//var cellCount = 9;
 			//var cellRange = 9;
 			//var theta = 360 / cellCount;
 			//var cellSize = this.$refs.carousel.offsetWidth/cellCount;
 			//var radius = Math.round( (100000) / Math.tan(20) );
-			var angle = this.selectedIndex / cellCount * -360;
+			var angle = this.selectedIndex / 9 * -360;
 			this.$refs.carousel.style.transform = 
 				'rotateY(' + angle + 'deg)';
 		},
