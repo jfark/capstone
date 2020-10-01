@@ -26,14 +26,16 @@ Vue.component('the-portfolio', {
 	},
 	methods: {
 		rotateCarousel: function() {
-			var cellCount = this.project.rooms.length;
+			
+			
+			var cellCount = 9;
 			//var cellRange = 9;
-			var theta = 360 / cellCount;
+			//var theta = 360 / cellCount;
 			//var cellSize = this.$refs.carousel.offsetWidth/cellCount;
-			var radius = Math.round( (280) / Math.tan(20) );
-			var angle = theta * this.selectedIndex * -1;
-			this.$refs.carousel.style.transform = 'translateZ(' + -radius + 'px) ' +
-				'rotateY' + '(' + angle + 'deg)';
+			//var radius = Math.round( (100000) / Math.tan(20) );
+			var angle = this.selectedIndex / cellCount * -360;
+			this.$refs.carousel.style.transform = 
+				'rotateY(' + angle + 'deg)';
 		},
 		next: function() {
 			this.selectedIndex++;
