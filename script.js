@@ -12,14 +12,22 @@
 
 */
 
-
-Vue.component ('the-carousel', {
-	props: ['cell'],
+Vue.component ('the-whole-carousel',{
+	props: ['whole-carousel'],
 	template: `
 		<div class="carousel-nav-buttons">
 			<button">Previous Slide</button>
 			<button>Next Slide</button>
 		</div>
+	`,
+	data: function() {
+		
+	}
+});
+
+Vue.component ('the-carousel-elements', {
+	props: ['cell'],
+	template: `
 		<div class="carouselNode">
 			<div class="carousel">
 				<div class="carousel__cell">

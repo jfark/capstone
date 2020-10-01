@@ -18,9 +18,19 @@
 				<h1>Sup</h1>
 			</div>
 			<!--Vue for single Carousel test-->
+			
+			<div class="portfolioOverall">
+				<div class="portfolioProjects" v-cloak>
+					<div is="the-whole-carousel" 
+					v-for="whole-carousel in which-carousel"
+					v-bind:project="whole-carousel">
+					</div>
+				</div>
+			</div>
+			
 			<div class="carouselOverall">
 				<div class="carouselCell" v-cloak>
-					<div is="the-carousel" 
+					<div is="the-carousel-elements" 
 					v-for="cell in carousel"
 					v-bind:cell="cell">
 					</div>
