@@ -4,8 +4,8 @@ Vue.component('the-portfolio', {
 		<div>
 			<div><h2>{{project.title}}</h2></div>
 			<div class="carousel-nav-buttons">
-				<button class="previous-button" v-on:click="previous">Previous Slide</button>
-				<button class="next-button" v-on:click="next">Next Slide</button>
+				<button class="previous-button" v-on:click="previous"><img src="images/Left.png"></button>
+				<button class="next-button" v-on:click="next"><img src="images/Right.png"></button>
 			</div>
 			<div class="carousel" ref="carousel">
 				<div v-for="room in project.rooms" class="carousel__cell">

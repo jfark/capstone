@@ -10,6 +10,11 @@
   src: url(fonts/MiloSerifOT-Bold.otf);
 }
 
+@font-face {
+	font-family: Agrandir-GrandHeavy;
+	src: url(fonts/Agrandir-GrandHeavy.otf);
+}
+
 html {
     font-family: 'Calibre-Medium', sans-serif;
 	font-family: 'MiloSerifOT-Bold', serif;
@@ -46,8 +51,16 @@ body {
 }
 
 .veil {
-	background: rgba(255, 255, 255, 1.00);
-	padding: 60%;
+	margin: 40%;
+	font-family: 'Agrandir-GrandHeavy', sans-serif;
+	color: black;
+	font-size: 3em;
+	
+}
+
+.veil h3 {
+	padding: 30%;
+	background: white;
 }
 
 
@@ -77,23 +90,38 @@ button {
 	padding: 10px;
 	text-align: center;
 	border: none;
+	background: #e55300;
+}
+
+button img {
+	max-width: 100%;
 }
 
 .previous-button {
-    font-family: 'Calibre-Medium', sans-serif;
+	font-family: 'Calibre-Medium', sans-serif;
 	position: fixed;
-    top: -20px;
+    top: -30px;
     left: 0;
-    background: black;
-	color: white;
+    
 }
 
 .next-button {
     font-family: 'Calibre-Medium', sans-serif;
 	position: fixed;
-    top: -20;
+    top: -30;
     right: 0;
-    background: #d55c26;
+   
+}
+
+.scene3D > div {
+    margin: 2rem;
+}
+
+.scene3D > div h2 {
+    margin-top: 0;
+    font-family: 'Agrandir-GrandHeavy', sans-serif;
+    font-size: 1.5rem;
+	text-align: center;
 }
 
 /*
@@ -201,6 +229,7 @@ h2 {
 .carousel img {
     max-width: 100%;
 	max-height: 100%;
+	border: 15px solid white;
 }
 
 
@@ -221,6 +250,8 @@ label {
     text-transform: uppercase;
     color: #3f5b44;
 }
+
+
 
 
 /*
@@ -504,16 +535,7 @@ h1 .logo {
 }
 */
 
-.scene3D > div {
-    padding: 2rem;
-}
 
-.scene3D > div h2 {
-    margin-top: 0;
-    font-family: 'MiloSerifOT-Bold', serif;
-    font-size: 1.5rem;
-	text-align: center;
-}
 
 /*
 .scene3D > div:nth-child(0) {
