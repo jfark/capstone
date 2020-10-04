@@ -1,36 +1,3 @@
-/*
-var carousel = document.querySelector('.carouselCell');
-var cells = carousel.querySelectorAll('.carouselNode');
-var cellCount; // cellCount set from cells-range input value
-var selectedIndex = 0;
-var cellWidth = carousel.offsetWidth;
-var cellHeight = carousel.offsetHeight;
-var isHorizontal = true;
-var rotateFn = isHorizontal ? 'rotateY' : 'rotateX';
-var radius, theta;
-
-var prevButton = document.querySelector('.previous-button');
-prevButton.addEventListener( 'click', function() {
-  console.log("Hello world!");
-  selectedIndex--;
-  rotateCarousel();
-});
-
-var nextButton = document.querySelector('.next-button');
-nextButton.addEventListener( 'click', function() {
-  console.log("Hello world!");
-  selectedIndex++;
-  rotateCarousel();
-});
-
-function rotateCarousel() {
-  var angle = theta * selectedIndex * -1;
-  carousel.style.transform = 'translateZ(' + -radius + 'px) ' + 
-    rotateFn + '(' + angle + 'deg)';
-}
-*/
-
-
 
 let films = [];
 

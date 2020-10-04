@@ -1,3 +1,35 @@
+/*
+var carousel = document.querySelector('.carouselCell');
+var cells = carousel.querySelectorAll('.carouselNode');
+var cellCount; // cellCount set from cells-range input value
+var selectedIndex = 0;
+var cellWidth = carousel.offsetWidth;
+var cellHeight = carousel.offsetHeight;
+var isHorizontal = true;
+var rotateFn = isHorizontal ? 'rotateY' : 'rotateX';
+var radius, theta;
+
+var prevButton = document.querySelector('.previous-button');
+prevButton.addEventListener( 'click', function() {
+  console.log("Hello world!");
+  selectedIndex--;
+  rotateCarousel();
+});
+
+var nextButton = document.querySelector('.next-button');
+nextButton.addEventListener( 'click', function() {
+  console.log("Hello world!");
+  selectedIndex++;
+  rotateCarousel();
+});
+
+function rotateCarousel() {
+  var angle = theta * selectedIndex * -1;
+  carousel.style.transform = 'translateZ(' + -radius + 'px) ' + 
+    rotateFn + '(' + angle + 'deg)';
+}
+
+
 /*--------Code from JF Portfolio-------*/
 
 /* for ref from HTML
@@ -79,6 +111,51 @@ Vue.component ('the-carousel-elements', {
 
 var carouselCell = new Vue ({
 	el: ".carouselOverall",
+	data: {
+		carousel: [
+			{
+				title: "First",
+				image: 'images/14.jpg',
+			},
+			{
+				title: "Second",
+				image: 'images/33.jpg',
+			},
+			{
+				title: "Third",
+				image: 'images/14.jpg',
+			},
+			{
+				title: "Fourth",
+				image: 'images/14.jpg',
+			},
+			{
+				title: "Fifth",
+				image: 'images/14.jpg',
+			},
+			{
+				title: "Sixth",
+				image: 'images/14.jpg',
+			},
+			{
+				title: "Seventh",
+				image: 'images/14.jpg',
+			},
+			{
+				title: "Eighth",
+				image: 'images/14.jpg',
+			},
+			{
+				title: "Ninth",
+				image: 'images/14.jpg',
+			},
+		]
+	},
+	
+});
+
+var carouselCell = new Vue ({
+	el: ".carouselOverall2",
 	data: {
 		carousel: [
 			{
@@ -232,3 +309,5 @@ var portfolioProjects = new Vue ({
 
 
 /*--------Code from Vincent Humeau CSS 3D Demo-------*/
+
+

@@ -105,6 +105,14 @@ button img {
 	perspective: 1000px;
 }
 
+.carouselOverall2 {
+	margin: 0 20%;
+	position: relative;
+	width: 470px;
+	height: 140px;
+	perspective: 1000px;
+}
+
 .carouselCell {
   width: 100%;
   height: 100%;
