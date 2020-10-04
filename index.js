@@ -27,7 +27,7 @@ function moveCamera() {
 }
 
 function setSceneHeight() {
-  const numberOfItems = 6;
+  const numberOfItems = 8;
   const itemZ = parseFloat(
     getComputedStyle(document.documentElement).getPropertyValue("--itemZ")
   );
