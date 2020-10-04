@@ -42,7 +42,7 @@ body {
     position: relative;
     width: 470px;
     height: 140px;
-    perspective: 1000px;
+    perspective: 5000px;
 }
 
 
@@ -272,8 +272,8 @@ label {
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display+SC:900");
 :root {
     --scenePerspective: 1;
-    --scenePerspectiveOriginX: 40;
-    --scenePerspectiveOriginY: 0;
+    --scenePerspectiveOriginX: 10;
+    --scenePerspectiveOriginY: 20;
     --itemZ: 2;
     --cameraSpeed: 150;
     --cameraZ: 0;
