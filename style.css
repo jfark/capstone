@@ -45,6 +45,8 @@ body {
     perspective: 1000px;
 }
 
+
+
 .intro {
 	background: #985587;
 	/*border: 30px solid #ddc954;*/
@@ -129,6 +131,8 @@ button img {
 	transform-style: preserve-3d;
     transition: transform 1s;
 }
+
+
 
 h2 {
 	font-family: 'MiloSerifOT-Bold', serif;
