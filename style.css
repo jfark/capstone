@@ -29,7 +29,8 @@ body {
 }
 
 header {
-	margin-top: 30%;
+	margin-top: 40%;
+	text-align: center;
 }
 
 header img {
@@ -99,7 +100,7 @@ button {
 	padding: 10px;
 	text-align: center;
 	border: none;
-	background: #e55300;
+	background: #fa4c25;
 }
 
 button img {
