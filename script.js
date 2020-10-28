@@ -259,4 +259,8 @@ var projectThree = new Vue ({
 	}
 });
 
+$(".carousel__cell").click(function(){
+	$(this).toggleClass("next");
+});
+
 

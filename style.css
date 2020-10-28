@@ -197,17 +197,6 @@ h2 {
 	/*transform-style: preserve-3d;*/
 }
 
-.carousel__cell p {
-    font-size: 2.5em;
-    letter-spacing: .3em;
-    text-align: center;
-    color: #f1ebb2;
-}
-
-.title_feature {
-	position: relative;
-}
-
 .carousel_title {
     position: absolute;
     top: 0%;
@@ -221,6 +210,28 @@ h2 {
 	display: none;
 	
 }
+
+.carousel__cell.next {
+	position: fixed;
+	top: 0;
+}
+
+.carousel__cell.next .carousel_title {
+	display: inline;
+}
+
+.carousel__cell p {
+    font-size: 2.5em;
+    letter-spacing: .3em;
+    text-align: center;
+    color: #f1ebb2;
+}
+
+.title_feature {
+	position: relative;
+}
+
+
 
 /*.carousel_title:hover {
 	display: none;
