@@ -208,16 +208,6 @@ h2 {
     /*transform-origin: 0 0;
     transform: rotate(-90deg);*/
 	display: none;
-	
-}
-
-.carousel__cell.next {
-	position: fixed;
-	top: 0;
-}
-
-.carousel__cell.next .carousel_title {
-	display: inline;
 }
 
 .carousel__cell p {
@@ -231,20 +221,9 @@ h2 {
 	position: relative;
 }
 
-
-
-/*.carousel_title:hover {
-	display: none;
-}
-
-.title_feature:hover .carousel_title {
-	display: none;
-}*/
-
 .highlight {
     background-color: ;
     font-family: 'Calibre-Regular', sans-serif;
-
 }
 
 .carousel img {
@@ -272,7 +251,17 @@ label {
     color: #3f5b44;
 }
 
+.carousel__cell.next {
+	
+}
 
+.carousel__cell.next .carousel_title {
+	display: inline;
+}
+
+.carousel__cell.next img {
+	border: 15px solid #fa4c25;
+}
 
 
 /*
