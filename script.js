@@ -51,7 +51,7 @@ var theModal = Vue.component ('the-modal', {
 	props: ['project'],
 	template: `
 		<div>
-			<div v-for="rooms in project" id="modalContainer">
+			<div v-for="rooms in project" id="modalCard">
 				<div class="title_feature">{{room.title}}</div>
 					<img v-bind:src="room.image" alt="title"/>
 				</div>	
@@ -277,7 +277,7 @@ $(".carousel__cell").click(function(){
 });
 
 var modalContainer = new Vue({
-	el: '#modalContainer',
+	el: '#modalCard',
 	data: {
 	    headerMessage: "Graphic & Web Design",
 		introMessage: "I am currently completing a master's degree in graphic and web design via the Minneapolis College of Art and Design (MCAD). Some recent work:",
