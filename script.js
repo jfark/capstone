@@ -268,7 +268,7 @@ $(".carousel__cell").click(function(){
 var modalCard = new Vue({
 	el: '#modalContainer',
 	data: {
-		import
+		
 	}
 })
 
