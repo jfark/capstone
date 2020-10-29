@@ -1,3 +1,5 @@
+Vue.component ()
+
 Vue.component('the-portfolio', {
 	props: ['project'],
 	template: `
