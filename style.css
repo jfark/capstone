@@ -145,10 +145,6 @@ h2 {
 	/*transform-style: preserve-3d;*/
 }
 
-.carousel__cell img {
-	max-height: 100%;
-}
-
 .carousel_title {
     position: absolute;
     top: 0%;
@@ -444,6 +440,7 @@ h1 .logo {
 
 
 .carousel__cell.next {
+	
 }
 
 .carousel__cell.next .carousel_title {
@@ -451,9 +448,7 @@ h1 .logo {
 }
 
 .carousel__cell.next img {
-    max-width: 100%;
-	max-height: 100%;
-	border: 15px solid white;
+	border: 15px solid #fa4c25;
 }
 
 #modalContainer {
