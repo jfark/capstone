@@ -265,4 +265,11 @@ $(".carousel__cell").click(function(){
 	$(this).toggleClass("next");
 });
 
+var modalCard = new Vue({
+	el: '#modalContainer',
+	data: {
+		import
+	}
+})
+
 
