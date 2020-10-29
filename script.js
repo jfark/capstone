@@ -9,7 +9,7 @@ var thePortfolio = Vue.component('the-portfolio', {
 			</div>
 			<div class="carousel" ref="carousel">
 				<div v-for="room in project.rooms" class="carousel__cell">
-					<div class="title_feature">
+					<div class="title_feature"
 						<div class="carousel_title">
 							<span class="highlight">{{room.title}}</span>
 						</div>
