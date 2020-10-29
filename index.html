@@ -17,10 +17,19 @@
 				<h3>Scroll to bring the gallery carousels into view.</h3>
 			</header>
 			
-			<div id="modalCard" v-cloak>
+			<!--<div id="modalCard" v-cloak>
+				<div is="the-modal"
+			v-for="room in project"
+			v-bind:project="project">
 					<h1 v-cloak>{{headerMessage}}</h1>
 					<p v-cloak>{{introMessage}}</p>
 			</div>
+				-->
+				
+			<div id="modalCard" v-cloak>
+				<div :project="project" is="the-modal"></div>
+			</div>
+				
 			
 		    <div class="viewport">
 		        <div class="scene3D-container">
