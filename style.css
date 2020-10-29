@@ -440,11 +440,11 @@ h1 .logo {
 
 
 .carousel__cell.next {
+	transform-style: flat;
 	transform: none;
-	translate: none;
-	width: 100vw;
-	position: fixed;
-	top: 0;
+	perspective: none;
+	z-index: 50;
+	height: 200vh;
 }
 
 .carousel__cell.next .carousel_title {
