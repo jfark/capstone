@@ -17,7 +17,11 @@
 				<h3>Scroll to bring the gallery carousels into view.</h3>
 			</header>
 			
-			<div class="modalContainer"></div>
+			<div id="modalContainer">
+				<div class="modalCard" v-cloak>
+					<div :project="project" is="the-modal"></div>
+				</div>
+			</div>
 			
 		    <div class="viewport">
 		        <div class="scene3D-container">

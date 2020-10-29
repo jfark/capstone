@@ -1,6 +1,4 @@
-Vue.component ()
-
-Vue.component('the-portfolio', {
+var thePortfolio = Vue.component('the-portfolio', {
 	props: ['project'],
 	template: `
 		<div>
@@ -11,7 +9,7 @@ Vue.component('the-portfolio', {
 			</div>
 			<div class="carousel" ref="carousel">
 				<div v-for="room in project.rooms" class="carousel__cell">
-					<div class="title_feature"
+					<div class="title_feature">
 						<div class="carousel_title">
 							<span class="highlight">{{room.title}}</span>
 						</div>
@@ -46,6 +44,19 @@ Vue.component('the-portfolio', {
 			this.rotateCarousel();
 		}
 	}
+});
+
+
+var theModal = Vue.component ('the-modal', {
+	props: ['project'],
+	template: `
+		<div>
+			<div v-for="rooms in project" id="modalContainer">
+				<div class="title_feature">{{room.title}}</div>
+					<img v-bind:src="room.image" alt="title"/>
+				</div>	
+			</div>
+		</div>`,
 });
 
 var projectOne = new Vue ({
@@ -265,11 +276,13 @@ $(".carousel__cell").click(function(){
 	$(this).toggleClass("next");
 });
 
-var modalCard = new Vue({
+var modalContainer = new Vue({
 	el: '#modalContainer',
 	data: {
-		
-	}
-})
+	    headerMessage: "Graphic & Web Design",
+		introMessage: "I am currently completing a master's degree in graphic and web design via the Minneapolis College of Art and Design (MCAD). Some recent work:",
+	  }
+});
+
 
 
