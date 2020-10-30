@@ -24,30 +24,43 @@ body {
     font-family: 'Calibre-Regular', sans-serif;
     background: url("");
     background-size: 100%;
-	background-color: rgba(255, 248, 231, 1.00);
 	background-color: #fbeae1;
 }
 
 header {
-	position: fixed;
-	top: 0;
-	left: 0;
-	text-align: center;
 	width: 100%;
 }
 
 header img {
+	position: fixed;
+	top: 0;
+	left: 0;
 	max-width: 100%;
 	padding: 5%;
 	
 }
 
-header h1 {
+.site-directions {
     font-family: 'Calibre-Medium', sans-serif;
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: black;
     margin: 0;
 	padding: 3%;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+}
+
+.opacity-layer {
+	background: hsla(22, 80%, 93%, .80);
+	position: sticky;
+	top: 0;
+	margin-top: 115%;
+	padding-bottom: 115%;
+}
+
+.opacity-layer p {
+	display: none;
 }
 
 /*h1 .logo {
