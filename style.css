@@ -29,13 +29,32 @@ body {
 }
 
 header {
-	margin-top: 30%;
 	text-align: center;
 }
 
 header img {
-	max-width: 50%;
+	max-width: 100%;
 	padding: 5%;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+h1 {
+    font-family: 'Calibre-Medium', sans-serif;
+    font-size: 1.5rem;
+    color: black;
+    margin: 0;
+    position: fixed;
+    bottom: 1rem;
+    left: 1rem;
+    text-align: center;
+}
+
+h1 .logo {
+    display: block;
+    margin: 0 auto;
+    max-width: 150px;
 }
 
 .scene {
@@ -420,23 +439,6 @@ body {
     margin: 0;
 }
 */
-
-h1 {
-    font-family: 'Calibre-Medium', sans-serif;
-    font-size: 1.5rem;
-    color: white;
-    margin: 0;
-    position: fixed;
-    bottom: 1rem;
-    left: 1rem;
-    text-align: center;
-}
-
-h1 .logo {
-    display: block;
-    margin: 0 auto;
-    max-width: 150px;
-}
 
 
 .carousel__cell.next {
