@@ -112,14 +112,24 @@ var projectOne = new Vue ({
 					image: 'images/main-room-north-wall/BF709.jpg',
 					caption: 'Artwork info',
 
-				},
-				{
-					title: "Title",
-					image: 'images/main-room-north-wall/BF65.jpg',
-					caption: 'Artwork info',
-
 				}
 			]
+		}
+	},
+	methods: {
+		addProject: function () {
+			let project = {
+				title: false,
+				rooms: [
+					{
+						title: this.titleInput,
+						image: this.imageInput,
+						caption: this.captionInput,
+					}
+				]
+			};
+			this.rooms.unshift(project);
+			this.titleInput = this.imageInput = this.captionInput = "";
 		}
 	}
 });
