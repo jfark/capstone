@@ -27,33 +27,26 @@
 							<h3>Main Room</h3>
 						</div>
 						
-						<div>
-							<form v-on:submit.prevent="addProject" v-cloak>
-								<fieldset>
-									<legend>Make your own ensemble to add to the Barnes </legend>
-									<div class="form-group">
-										<label>Title: <input v-model="titleInput" type="text" /></label>
-										<label>1st Image URL: <input v-model="imageInput1" type="text"/></label>
-										<label>2nd Image URL: <input v-model="imageInput2" type="text"/></label>
-										<label>3rd Image URL: <input v-model="imageInput3" type="text"/></label>
-										<label>4th Image URL: <input v-model="imageInput4" type="text"/></label>
-										<label>5th Image URL: <input v-model="imageInput5" type="text"/></label>
-										<label>6th Image URL: <input v-model="imageInput6" type="text"/></label>
-										<label>7th Image URL: <input v-model="imageInput7" type="text"/></label>
-										<label>8th Image URL: <input v-model="imageInput8" type="text"/></label>
-										<label>9th Image URL: <input v-model="imageInput9" type="text"/></label>
-									</div>
-									<button type="submit">Add my work!</button>
-								</fieldset>
-							</form>
-						</div>
-						
 						<div class="veil">
 							<h3>Main Room, North Wall</h3>
 						</div>
 						
 						<div class="scene">
+							
 			                <div class="portfolioOverall" >
+								
+								<form v-on:submit.prevent="addProject" v-cloak>
+									<fieldset>
+										<legend>What would you add to this Barnes Ensemble? </legend>
+										<div class="form-group">
+											<label>Title: <input v-model="titleInput" type="text" /></label>
+											<label>Image URL: <input v-model="imageInput" type="text"/></label>
+											<label>Caption: <input v-model="captionInput" type="text"/></label>
+										</div>
+										<button type="submit">Add my work!</button>
+									</fieldset>
+								</form>
+								
 			                    <div class="projectOne" v-cloak>
 			                        <div :project="project" is="the-portfolio"></div>
 			                    </div>

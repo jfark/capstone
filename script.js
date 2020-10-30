@@ -45,35 +45,13 @@ var thePortfolio = Vue.component('the-portfolio', {
 		},
 		addProject: function () {
 			let project = {
-				title: this.titleInput,
+				title: false,
 				rooms: [
 					{
-						image: this.imageInput1
-					},
-					{
-						image: this.imageInput2
-					},
-					{
-						image: this.imageInput3
-					},
-					{
-						image: this.imageInput4
-					},
-					{
-						image: this.imageInput5
-					},
-					{
-						image: this.imageInput6
-					},
-					{
-						image: this.imageInput7
-					},
-					{
-						image: this.imageInput8
-					},
-					{
-						image: this.imageInput9
-					},
+						title: this.titleInput,
+						image: this.imageInput,
+						caption: this.captionInput,
+					}
 				]
 			}
 		}
@@ -84,6 +62,9 @@ var thePortfolio = Vue.component('the-portfolio', {
 var projectOne = new Vue ({
 	el: ".projectOne",
 	data: {
+		titleInput: "",
+		imageInput: "",
+		captionInput: "",
 		project: {
 			title: 'Main Room, North Wall',
 			rooms: [
