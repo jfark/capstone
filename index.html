@@ -16,24 +16,6 @@
 				<img src="images/BarnesWitz_Full_Orange.svg">
 				<h3>Scroll to bring the gallery carousels into view.</h3>
 			</header>
-			
-			<!--<div id="modalCard" v-cloak>
-				<div is="the-modal"
-			v-for="room in project"
-			v-bind:project="project">
-					<h1 v-cloak>{{headerMessage}}</h1>
-					<p v-cloak>{{introMessage}}</p>
-			</div>
-				-->
-				
-			<!--Ken, I keep getting a console log error: "project is not defined"-->
-			
-			<div id="modalCard" v-cloak>
-				<div is="the-modal"
-				v-for="room in rooms"
-				v-bind:room="room">
-				</div>
-			</div>
 				
 			
 		    <div class="viewport">
@@ -43,6 +25,27 @@
 						
 						<div class="veil">
 							<h3>Main Room</h3>
+						</div>
+						
+						<div>
+							<form v-on:submit.prevent="addProject" v-cloak>
+								<fieldset>
+									<legend>Make your own ensemble to add to the Barnes </legend>
+									<div class="form-group">
+										<label>Title: <input v-model="titleInput" type="text" /></label>
+										<label>1st Image URL: <input v-model="imageInput1" type="text"/></label>
+										<label>2nd Image URL: <input v-model="imageInput2" type="text"/></label>
+										<label>3rd Image URL: <input v-model="imageInput3" type="text"/></label>
+										<label>4th Image URL: <input v-model="imageInput4" type="text"/></label>
+										<label>5th Image URL: <input v-model="imageInput5" type="text"/></label>
+										<label>6th Image URL: <input v-model="imageInput6" type="text"/></label>
+										<label>7th Image URL: <input v-model="imageInput7" type="text"/></label>
+										<label>8th Image URL: <input v-model="imageInput8" type="text"/></label>
+										<label>9th Image URL: <input v-model="imageInput9" type="text"/></label>
+									</div>
+									<button type="submit">Add my work!</button>
+								</fieldset>
+							</form>
 						</div>
 						
 						<div class="veil">

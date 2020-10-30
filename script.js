@@ -1,10 +1,3 @@
-import Vue from 'vue';
-
-const EventBus = new Vue();
-
-export default EventBus;
-
-
 var thePortfolio = Vue.component('the-portfolio', {
 	props: ['project'],
 	template: `
@@ -49,23 +42,42 @@ var thePortfolio = Vue.component('the-portfolio', {
 		previous: function() {
 			this.selectedIndex--;
 			this.rotateCarousel();
+		},
+		addProject: function () {
+			let project = {
+				title: this.titleInput,
+				rooms: [
+					{
+						image: this.imageInput1
+					},
+					{
+						image: this.imageInput2
+					},
+					{
+						image: this.imageInput3
+					},
+					{
+						image: this.imageInput4
+					},
+					{
+						image: this.imageInput5
+					},
+					{
+						image: this.imageInput6
+					},
+					{
+						image: this.imageInput7
+					},
+					{
+						image: this.imageInput8
+					},
+					{
+						image: this.imageInput9
+					},
+				]
+			}
 		}
 	}
-});
-
-var theModal = Vue.component('the-modal', {
-	props: ['rooms'],
-	template: `
-		<div>
-			<div v-for="room in project.rooms id="modalContainer">
-				<div class="title_feature">{{room.title}}</div>
-					<img v-bind:src="room.image" alt="title"/>
-				</div>	
-			</div>
-		</div>`,
-	data: function() {
-			return {rooms: []}
-		},
 });
 
 
@@ -256,14 +268,6 @@ var projectThree = new Vue ({
 
 $(".carousel__cell").click(function(){
 	$(this).toggleClass("next");
-});
-
-
-var modalContainer = new Vue ({
-	el: "#modalCard",
-	data: {
-		foo:"Bar"
-	}
 });
 
 
