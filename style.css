@@ -29,33 +29,32 @@ body {
 }
 
 header {
+	position: fixed;
+	top: 0;
+	left: 0;
 	text-align: center;
+	width: 100%;
 }
 
 header img {
 	max-width: 100%;
 	padding: 5%;
-	position: fixed;
-	top: 0;
-	left: 0;
+	
 }
 
-h1 {
+header h1 {
     font-family: 'Calibre-Medium', sans-serif;
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: black;
     margin: 0;
-    position: fixed;
-    bottom: 1rem;
-    left: 1rem;
-    text-align: center;
+	padding: 3%;
 }
 
-h1 .logo {
+/*h1 .logo {
     display: block;
     margin: 0 auto;
     max-width: 150px;
-}
+}*/
 
 .scene {
     margin: 0% 20%;
