@@ -29,7 +29,10 @@
 			<!--Ken, I keep getting a console log error: "project is not defined"-->
 			
 			<div id="modalCard" v-cloak>
-				<div :project="project" is="the-modal"></div>
+				<div is="the-modal"
+				v-for="room in rooms"
+				v-bind:room="room">
+				</div>
 			</div>
 				
 			

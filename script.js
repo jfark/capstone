@@ -1,3 +1,6 @@
+import Vue from 'vue';
+export const EventBus = new Vue();
+
 var thePortfolio = Vue.component('the-portfolio', {
 	props: ['project'],
 	template: `
@@ -44,6 +47,21 @@ var thePortfolio = Vue.component('the-portfolio', {
 			this.rotateCarousel();
 		}
 	}
+});
+
+var theModal = Vue.component('the-modal', {
+	props: ['rooms'],
+	template: `
+		<div>
+			<div v-for="room in project.rooms id="modalContainer">
+				<div class="title_feature">{{room.title}}</div>
+					<img v-bind:src="room.image" alt="title"/>
+				</div>	
+			</div>
+		</div>`,
+	data: function() {
+			return {rooms: []}
+		},
 });
 
 
@@ -236,22 +254,6 @@ $(".carousel__cell").click(function(){
 	$(this).toggleClass("next");
 });
 
-//Ken, I tried putting these down here so the project array could be loaded by the time this directive comes up
-
-var theModal = Vue.component('the-modal', {
-	props: ['project'],
-	template: `
-		<div>
-			<div v-for="room in project.rooms id="modalContainer">
-				<div class="title_feature">{{room.title}}</div>
-					<img v-bind:src="room.image" alt="title"/>
-				</div>	
-			</div>
-		</div>`,
-	data: function() {
-			return {project: []}
-		},
-});
 
 var modalContainer = new Vue ({
 	el: "#modalCard",
