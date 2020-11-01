@@ -63,6 +63,7 @@ main {
 	display: flex;
 	text-align: center;
 	width: 100%;
+	font-family: 'Agrandir-GrandHeavy', sans-serif;
 }
 
 .intro-questions div {
@@ -72,6 +73,7 @@ main {
 }
 
 .intro-questions p {
+	font-family: 'Calibre-Regular', sans-serif;
 	text-align: left;
 	padding-top: 0;
 	margin-top: 0;
