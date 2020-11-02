@@ -112,6 +112,12 @@ var projectOne = new Vue ({
 					image: 'images/main-room-north-wall/BF709.jpg',
 					caption: 'Artwork info',
 
+				},
+				{
+					title: "Title; 1886–1888.",
+					image: 'images/main-room-north-wall/BF65.jpg',
+					caption: 'Artwork info',
+
 				}
 			]
 		}
