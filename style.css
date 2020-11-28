@@ -186,7 +186,11 @@ h2 {
 	background-color: rgba(255, 248, 231, 0);
 	/*border-top: 5px solid rgba(247, 92, 16, 1.00);*/
 	/*transform-style: preserve-3d;*/
-	
+}
+
+.title_feature {
+	position: relative;
+	background: black;
 }
 
 .carousel_title {
@@ -196,7 +200,11 @@ h2 {
     font-size: 1em;
     line-height: 1.3em;
 	display: none;
-	
+}
+
+.carousel_title p {
+	background: black;
+	padding: 2%;
 }
 
 .carousel__cell.next {
@@ -219,10 +227,7 @@ h2 {
     color: #f1ebb2;
 }*/
 
-.title_feature {
-	position: relative;
-	background: black;
-}
+
 
 .highlight {
 	font-family: 'Agrandir-GrandHeavy', sans-serif;

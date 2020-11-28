@@ -11,10 +11,10 @@ var thePortfolio = Vue.component('the-portfolio', {
 				<div v-for="room in project.rooms" class="carousel__cell">
 					<div class="title_feature"
 						<div class="carousel_title">
-							<span class="highlight">{{room.title}}</span>
+							<p><span class="highlight">{{room.title}}</span></p>
 						</div>
 						<img v-bind:src="room.image" alt="title"/>
-					</div>	
+					</div>
 				</div>
 			</div>
 		</div>
