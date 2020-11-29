@@ -130,6 +130,7 @@ button img {
 	position: fixed;
     top: -30%;
     left: 0;
+	background: white;
     
 }
 
@@ -138,6 +139,7 @@ button img {
 	position: fixed;
     top: -30%;
     right: 0;
+	background: white;
    
 }
 
@@ -263,6 +265,14 @@ label {
 form {
 	margin: 2%;
 	padding-top: 3%;
+}
+
+.form-group {
+	text-align: right;
+}
+
+form button {
+	width: 100%;
 }
 
 .carousel__cell:nth-child(1) { transform: rotateY(  0deg) translateZ(769px); }
