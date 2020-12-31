@@ -64,12 +64,19 @@ header img {
 	left: 0;
 }
 
-.opacity-layer {
+/*.opacity-layer {
 	background: hsla(22, 80%, 93%, .80);
 	position: sticky;
 	top: 0;
 	margin-top: 100%;
 	padding-bottom: 100%;
+	height: 200%;
+}*/
+
+.opacity-layer {
+	background: hsla(22, 80%, 93%, .65);
+	position: sticky;
+	top: 0;
 	height: 200%;
 }
 
@@ -97,6 +104,21 @@ header img {
 .veil h3 {
 	padding: 30%;
 }
+
+.veil a {
+	text-decoration: none;
+	color: #fa4c25;
+	font-family: 'Agrandir-GrandHeavy', sans-serif;
+	font-size: 4rem;
+	text-transform: none;
+	letter-spacing: 0;
+	margin: 0;
+}
+
+.veil a:hover {
+	font-style: italic;
+}
+
 
 
 .intro {
@@ -265,6 +287,7 @@ label {
 form {
 	margin: 2%;
 	padding-top: 3%;
+	display: none;
 }
 
 .form-group {
